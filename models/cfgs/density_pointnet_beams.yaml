@@ -1,0 +1,26 @@
+meta:
+  dropout: 0.0
+point_features:
+  type: point_beams
+  max_points: 1024
+  epsilon: 0.05
+  augmented: True
+  seg_filter: False
+  distance: True
+  mean_shift: True
+point_encoder:
+  type: pointnet
+  num_input_channels: 8
+  feature_size: 512
+  layer_dims:
+    - 64
+    - 128
+    - 256
+head:
+  type: regressor
+  fc_layers:
+    - 512
+    - 256
+    - 64
+    - 64
+    - 64

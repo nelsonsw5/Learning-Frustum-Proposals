@@ -1,0 +1,43 @@
+metadata:
+  wandb_entity: prj-research
+  wandb_project: Learning-Frustum-Proposals
+  wandb_group: debugging
+  run_name: debug-test
+  viz: True
+model:
+  cfg: "/home/stephen/Projects/Learning-Frustum-Proposals/models/cfgs/density_pointnet_beams.yaml"
+  weights: null # path to pretained weights
+dataset:
+  dir: "/multiview/3d-count/coolers"
+  use_normals: False
+  drop_last: False
+  cache: False  # bool or float in [0,1]
+  notest: False
+  num_workers: 8
+  shuffle: True # shuffle points
+  sample_points: null
+optimization:
+  resume: False
+  epochs: 5
+  learning_rate: 0.001
+  optimizer: adam
+  batch_size: 4
+  test_batch_size: 4
+  dropout: 0.0
+  cuda: True
+  weight_decay: 0.1
+
+data_augmentation:
+  mirror_x:
+    apply: True
+    probability: 0.2
+  add_noise:
+    apply: True
+    samples: 0.1
+    mean: 0
+    std: 0.02
+  resize:
+    apply: True
+    samples: 0.2
+    mean: 0
+    std: 0.05

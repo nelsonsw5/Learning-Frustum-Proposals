@@ -1,0 +1,26 @@
+Parallel processing enabled
+Logging model files to ./chkp/debug-test
+TRAINING MODEL: regressor
+Training on GPU: 4 devices
+************* EPOCH: 1 *************
+  0%|                                                                                                                      | 0/2445 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "train/train_density_neonet.py", line 116, in <module>
+    main(args)
+  File "train/train_density_neonet.py", line 104, in main
+    trainer.fit()
+  File "/home/stephen/Projects/Learning-Frustum-Proposals/trainers/base_trainer.py", line 329, in fit
+    for inputs, targets in pbar:
+  File "/home/stephen/.local/lib/python3.8/site-packages/tqdm/std.py", line 1180, in __iter__
+    for obj in iterable:
+  File "/home/stephen/anaconda3/envs/pytorch3d/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 681, in __next__
+    data = self._next_data()
+  File "/home/stephen/anaconda3/envs/pytorch3d/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 721, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/stephen/anaconda3/envs/pytorch3d/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/stephen/anaconda3/envs/pytorch3d/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/stephen/Projects/Learning-Frustum-Proposals/datasets/density_point_cloud_data.py", line 333, in __getitem__
+    beam_feats = BeamFeatures(
+TypeError: __init__() got an unexpected keyword argument 'resize'

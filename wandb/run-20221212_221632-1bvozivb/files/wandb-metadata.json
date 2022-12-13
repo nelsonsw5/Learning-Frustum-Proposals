@@ -1,0 +1,180 @@
+{
+    "os": "Linux-5.15.0-56-generic-x86_64-with-glibc2.17",
+    "python": "3.8.15",
+    "heartbeatAt": "2022-12-13T05:16:33.133427",
+    "startedAt": "2022-12-13T05:16:32.683220",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--trn-cfg",
+        "train/cfg_density_neonet.yaml"
+    ],
+    "state": "running",
+    "program": "train/train_density_neonet.py",
+    "codePath": "train/train_density_neonet.py",
+    "git": {
+        "remote": "https://github.com/nelsonsw5/Learning-Frustum-Proposals.git",
+        "commit": "6b0633b5768ff32f5ef682639733c3fbc7592cb5"
+    },
+    "email": "stephenwnelson5@gmail.com",
+    "root": "/home/stephen/Projects/Learning-Frustum-Proposals",
+    "host": "ava",
+    "username": "stephen",
+    "executable": "/home/stephen/anaconda3/envs/pytorch3d/bin/python",
+    "cpu_count": 12,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 3464.302416666667,
+        "min": 1200.0,
+        "max": 4650.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4488.339,
+            "min": 1200.0,
+            "max": 4800.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1200.005,
+            "min": 1200.0,
+            "max": 4700.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4800.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4700.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4800.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4700.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4800.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4700.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1200.0,
+            "max": 4600.0
+        }
+    ],
+    "disk": {
+        "total": 915.3232879638672,
+        "used": 855.7988243103027
+    },
+    "gpu": "NVIDIA GeForce RTX 3070",
+    "gpu_count": 4,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3070",
+            "memory_total": 8370061312
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3070",
+            "memory_total": 8370061312
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3070",
+            "memory_total": 8370061312
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3070",
+            "memory_total": 8366784512
+        }
+    ],
+    "memory": {
+        "total": 62.491764068603516
+    }
+}

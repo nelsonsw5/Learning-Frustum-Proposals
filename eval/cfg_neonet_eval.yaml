@@ -1,0 +1,42 @@
+metadata:
+  wandb_log: True
+  wandb_entity: prj-research
+  wandb_project: neonet
+  wandb_group: val148
+  wandb_run: test run name
+  plot: False
+  gcs_log: True
+  gcs_bucket_path: dai-staging-models/geometric/neonet
+  gcs_auth: "../gcloud_auth_staging.json"
+dataset:
+  dir: /home/porter/data/3d/val148
+  use_normals: False
+  cache: False
+  limit: null
+  shuffle: False # shuffle points
+  sample_points: null
+optimization:
+  batch_size: 1
+  cuda: False
+  dropout: 0
+model:
+  chkp: "/home/porter/models/4.01.19-test/best.pt"
+  cfg: "/home/porter/models/4.01.19-test/pointnet_transformer.yaml"
+  normalizer: "/home/porter/models/4.01.19-test/normalizer.json"
+data_augmentation:
+  mirror_x:
+    apply: False
+    probability: 0.2
+  add_noise:
+    apply: False
+    samples: 0.1
+    mean: 0
+    std: 0.02
+  resize:
+    apply: False
+    samples: 0.2
+    mean: 0
+    std: 0.05
+diff:
+  apply: False
+  k: 5

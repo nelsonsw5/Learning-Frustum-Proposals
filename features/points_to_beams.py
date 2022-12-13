@@ -6,8 +6,9 @@ import numpy as np
 import torch
 import numba
 import math
-import pdb
+from typing import Optional
 
+from transforms import GaussianResize
 
 @numba.jit(nopython=True)
 def _points_to_voxel_kernel(
@@ -62,9 +63,9 @@ class BeamFeatures(object):
             with_distance=False,
             zero_pad=True,
             augmented=False,
-            local=False
+            local=False,
+            resize: Optional[GaussianResize] = None
     ):
-
         """
 
         @param beam_dim: beam index over which to compute beams {0, 1, 2}
@@ -87,6 +88,7 @@ class BeamFeatures(object):
         self.with_distance = with_distance
         self.zero_pad = zero_pad
         self.local = local
+        self.resize = resize
 
     @staticmethod
     def points_to_voxel(points,
@@ -256,7 +258,6 @@ class BeamFeatures(object):
         return dist_feats
 
     def __call__(self, points, centroids, dimensions, *args, **kwargs):
-        pdb.set_trace()
 
         if isinstance(points, torch.Tensor):
             points = points.data.numpy()
@@ -280,8 +281,10 @@ class BeamFeatures(object):
             max_points=self.max_points,
             max_voxels=int(self.max_voxels)
         )
-        pdb.set_trace()
+
         # Find distance of x, y, and z from cluster center
+        if self.resize:
+            features = self.resize(features)
 
         features = torch.from_numpy(features)
         num_voxels[num_voxels == 0] += 1  # Avoids divide by zero
@@ -327,7 +330,7 @@ class BeamFeatures(object):
         n_dense = len(torch.where(sums != 0.0)[0])
         point_density = n_dense / (sums.shape[0]*sums.shape[1])
         print(f"point-wise density: {point_density}")"""
-        pdb.set_trace()
+
         return features, num_voxels
 
     @staticmethod

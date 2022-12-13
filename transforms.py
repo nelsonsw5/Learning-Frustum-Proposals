@@ -1,5 +1,7 @@
 import torch
 import numpy as np
+import random
+
 
 class MeanShift(object):
     def __call__(self, pc, *args, **kwargs):
@@ -177,9 +179,43 @@ class ShufflePoints(object):
     def __call__(self, pc, *args, **kwargs):
         return pc[self.idx]
 
-class KittiPoints2Wandb(object):
 
-    def __call__(self, verts, invert=True, *args, **kwargs):
-        x, y, z = verts.unbind(-1)
-        swapped = [-y.unsqueeze(-1), -x.unsqueeze(-1), z.unsqueeze(-1)]
-        return torch.cat(swapped, -1)
+class GaussianResize(object):
+    """
+    Resize point cloud using Gaussian noise
+    """
+
+    def __init__(self, mu: float = 0.0, sig: float = 0.1, samples: float = 0.25, broadcast: bool = False):
+        self.mu = mu + 1.0 # perturbation relative to existing points
+        self.sig = sig
+        self.samples = samples
+        self.broadcast = broadcast
+
+    def __call__(self, pc: np.ndarray, *args, **kwargs):
+        """
+
+        @param pc: input point cloud dims (batch_size, num_points, num_channels)
+        @return:
+        """
+        alpha = random.random()
+
+        if alpha >= self.samples:
+            # don't perturb point cloud
+            return pc
+
+        if self.broadcast:
+
+            bs, n, c = pc.shape
+            ndim = pc.ndim
+            shp = [-1] + [1]*(ndim-1)
+
+            mu = pc.mean(axis=1).reshape(bs, 1, c)
+            scalar = np.random.normal(self.mu, self.sig, size=bs)
+            dist = pc-mu
+            scalar = scalar.reshape(shp)
+            output = scalar*dist + pc - dist
+        else:
+            scalar = np.random.normal(self.mu, self.sig)
+            output = pc * scalar
+
+        return output
