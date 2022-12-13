@@ -219,3 +219,9 @@ class GaussianResize(object):
             output = pc * scalar
 
         return output
+class KittiPoints2Wandb(object):
+
+    def __call__(self, verts, invert=True, *args, **kwargs):
+        x, y, z = verts.unbind(-1)
+        swapped = [-y.unsqueeze(-1), -x.unsqueeze(-1), z.unsqueeze(-1)]
+        return torch.cat(swapped, -1)
