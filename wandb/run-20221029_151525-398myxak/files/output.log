@@ -1,0 +1,14 @@
+/home/stephen/anaconda3/envs/detection3d/lib/python3.8/site-packages/pytorch3d/io/obj_io.py:542: UserWarning: No mtl file provided
+  warnings.warn("No mtl file provided")
+Traceback (most recent call last):
+  File "viz_display_audit.py", line 78, in <module>
+    main(args)
+  File "viz_display_audit.py", line 51, in main
+    img_dict = run.get_img_log(data[val])
+  File "/home/stephen/Projects/Learned-Frustum-Proposals/Thesis/wandb_utils/wandb.py", line 136, in get_img_log
+    image = wandb.Image(fpath_or_list, caption=caption)
+  File "/home/stephen/anaconda3/envs/detection3d/lib/python3.8/site-packages/wandb/sdk/data_types/image.py", line 153, in __init__
+    self._initialize_from_data(data_or_path, mode)
+  File "/home/stephen/anaconda3/envs/detection3d/lib/python3.8/site-packages/wandb/sdk/data_types/image.py", line 279, in _initialize_from_data
+    if data.ndim > 2:
+AttributeError: 'dict' object has no attribute 'ndim'

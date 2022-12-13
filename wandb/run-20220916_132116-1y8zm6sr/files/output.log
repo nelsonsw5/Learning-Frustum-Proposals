@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "visualize_pointcloud.py", line 70, in <module>
+    run.log_point_cloud(points=scan)
+  File "/home/stephen/Projects/Thesis/wandb_utils/wandb.py", line 166, in log_point_cloud
+    self.log(self.get_point_count_log(points))
+AttributeError: 'WandB' object has no attribute 'get_point_count_log'

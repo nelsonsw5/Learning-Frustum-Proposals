@@ -1,0 +1,24 @@
+{
+    "os": "Linux-5.15.0-46-generic-x86_64-with-glibc2.17",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-09-16T20:20:35.071461",
+    "startedAt": "2022-09-16T20:20:34.625177",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3070",
+    "gpu_count": 4,
+    "cpu_count": 24,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "visualize_pointcloud.py",
+    "codePath": "Projects/Thesis/visualize_pointcloud.py",
+    "git": {
+        "remote": "https://github.com/nelsonsw5/3DDet.git",
+        "commit": null
+    },
+    "email": "stephenwnelson5@gmail.com",
+    "root": "/home/stephen",
+    "host": "ava",
+    "username": "stephen",
+    "executable": "/home/stephen/anaconda3/envs/thesis/bin/python"
+}

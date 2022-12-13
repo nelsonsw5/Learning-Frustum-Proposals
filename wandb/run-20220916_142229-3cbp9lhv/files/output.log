@@ -1,0 +1,27 @@
+> /home/stephen/Projects/Thesis/visualize_pointcloud.py(26)<module>()
+-> image = '/multiview/3d-count/Kitti/training/image_2/000025.png'
+*** SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "visualize_pointcloud.py", line 26, in <module>
+    image = '/multiview/3d-count/Kitti/training/image_2/000025.png'
+  File "visualize_pointcloud.py", line 26, in <module>
+    image = '/multiview/3d-count/Kitti/training/image_2/000025.png'
+  File "/home/stephen/anaconda3/envs/thesis/lib/python3.8/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/stephen/anaconda3/envs/thesis/lib/python3.8/bdb.py", line 112, in dispatch_line
+    self.user_line(frame)
+  File "/home/stephen/anaconda3/envs/thesis/lib/python3.8/pdb.py", line 262, in user_line
+    self.interaction(frame, None)
+  File "/home/stephen/anaconda3/envs/thesis/lib/python3.8/pdb.py", line 357, in interaction
+    self._cmdloop()
+  File "/home/stephen/anaconda3/envs/thesis/lib/python3.8/pdb.py", line 322, in _cmdloop
+    self.cmdloop()
+  File "/home/stephen/anaconda3/envs/thesis/lib/python3.8/cmd.py", line 138, in cmdloop
+    stop = self.onecmd(line)
+  File "/home/stephen/anaconda3/envs/thesis/lib/python3.8/pdb.py", line 423, in onecmd
+    return cmd.Cmd.onecmd(self, line)
+  File "/home/stephen/anaconda3/envs/thesis/lib/python3.8/cmd.py", line 217, in onecmd
+    return func(arg)
+  File "/home/stephen/anaconda3/envs/thesis/lib/python3.8/pdb.py", line 1032, in do_run
+    raise Restart
+pdb.Restart

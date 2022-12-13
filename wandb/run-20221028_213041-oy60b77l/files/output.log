@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "viz_display_audit.py", line 124, in <module>
+    main(args)
+  File "viz_display_audit.py", line 26, in main
+    obj = data_path + scene + '.obj'
+NameError: name 'scene' is not defined

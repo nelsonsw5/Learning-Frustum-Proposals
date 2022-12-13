@@ -1,0 +1,30 @@
+/home/stephen/anaconda3/envs/detection3d/lib/python3.8/site-packages/pytorch3d/io/obj_io.py:542: UserWarning: No mtl file provided
+  warnings.warn("No mtl file provided")
+> /home/stephen/Projects/Learned-Frustum-Proposals/Thesis/viz_display_audit.py(50)main()
+-> img_dict = run.get_img_log(data[val])
+Traceback (most recent call last):
+  File "viz_display_audit.py", line 77, in <module>
+    main(args)
+  File "viz_display_audit.py", line 50, in main
+    img_dict = run.get_img_log(data[val])
+  File "viz_display_audit.py", line 50, in main
+    img_dict = run.get_img_log(data[val])
+  File "/home/stephen/anaconda3/envs/detection3d/lib/python3.8/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/stephen/anaconda3/envs/detection3d/lib/python3.8/bdb.py", line 112, in dispatch_line
+    self.user_line(frame)
+  File "/home/stephen/anaconda3/envs/detection3d/lib/python3.8/pdb.py", line 262, in user_line
+    self.interaction(frame, None)
+  File "/home/stephen/anaconda3/envs/detection3d/lib/python3.8/pdb.py", line 357, in interaction
+    self._cmdloop()
+  File "/home/stephen/anaconda3/envs/detection3d/lib/python3.8/pdb.py", line 322, in _cmdloop
+    self.cmdloop()
+  File "/home/stephen/anaconda3/envs/detection3d/lib/python3.8/cmd.py", line 138, in cmdloop
+    stop = self.onecmd(line)
+  File "/home/stephen/anaconda3/envs/detection3d/lib/python3.8/pdb.py", line 423, in onecmd
+    return cmd.Cmd.onecmd(self, line)
+  File "/home/stephen/anaconda3/envs/detection3d/lib/python3.8/cmd.py", line 217, in onecmd
+    return func(arg)
+  File "/home/stephen/anaconda3/envs/detection3d/lib/python3.8/pdb.py", line 1032, in do_run
+    raise Restart
+pdb.Restart

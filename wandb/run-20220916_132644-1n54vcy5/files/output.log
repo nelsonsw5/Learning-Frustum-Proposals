@@ -1,0 +1,30 @@
+> /home/stephen/Projects/Thesis/wandb_utils/wandb.py(167)log_point_cloud()
+-> if self.enabled and self.log_objects:
+True
+*** AttributeError: 'WandB' object has no attribute 'lob_objects'
+Traceback (most recent call last):
+  File "visualize_pointcloud.py", line 69, in <module>
+    run.log_point_cloud(points=scan)
+  File "/home/stephen/Projects/Thesis/wandb_utils/wandb.py", line 167, in log_point_cloud
+    if self.enabled and self.log_objects:
+  File "/home/stephen/Projects/Thesis/wandb_utils/wandb.py", line 167, in log_point_cloud
+    if self.enabled and self.log_objects:
+  File "/home/stephen/anaconda3/envs/thesis/lib/python3.8/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/stephen/anaconda3/envs/thesis/lib/python3.8/bdb.py", line 112, in dispatch_line
+    self.user_line(frame)
+  File "/home/stephen/anaconda3/envs/thesis/lib/python3.8/pdb.py", line 262, in user_line
+    self.interaction(frame, None)
+  File "/home/stephen/anaconda3/envs/thesis/lib/python3.8/pdb.py", line 357, in interaction
+    self._cmdloop()
+  File "/home/stephen/anaconda3/envs/thesis/lib/python3.8/pdb.py", line 322, in _cmdloop
+    self.cmdloop()
+  File "/home/stephen/anaconda3/envs/thesis/lib/python3.8/cmd.py", line 138, in cmdloop
+    stop = self.onecmd(line)
+  File "/home/stephen/anaconda3/envs/thesis/lib/python3.8/pdb.py", line 423, in onecmd
+    return cmd.Cmd.onecmd(self, line)
+  File "/home/stephen/anaconda3/envs/thesis/lib/python3.8/cmd.py", line 217, in onecmd
+    return func(arg)
+  File "/home/stephen/anaconda3/envs/thesis/lib/python3.8/pdb.py", line 1032, in do_run
+    raise Restart
+pdb.Restart

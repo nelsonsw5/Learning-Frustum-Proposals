@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "kitti_viz_display_audit.py", line 124, in <module>
+    main(args)
+  File "kitti_viz_display_audit.py", line 64, in main
+    with open("/multiview/3d-count/Kitti/pretrained_result.pkl",'rb') as result:
+FileNotFoundError: [Errno 2] No such file or directory: '/multiview/3d-count/Kitti/pretrained_result.pkl'

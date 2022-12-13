@@ -1,0 +1,27 @@
+{
+    "os": "Linux-5.15.0-48-generic-x86_64-with-glibc2.17",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-10-29T21:21:36.419962",
+    "startedAt": "2022-10-29T21:21:36.026007",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3070",
+    "gpu_count": 4,
+    "cpu_count": 24,
+    "cuda": null,
+    "args": [
+        "--scene",
+        "000001"
+    ],
+    "state": "running",
+    "program": "viz_display_audit.py",
+    "codePath": "Thesis/viz_display_audit.py",
+    "git": {
+        "remote": "https://github.com/nelsonsw5/Learning-Frustum-Proposals.git",
+        "commit": "4b8e25dcb683bcb0cb93a80379e7abd6dfcc3181"
+    },
+    "email": "stephenwnelson5@gmail.com",
+    "root": "/home/stephen/Projects/Learned-Frustum-Proposals",
+    "host": "ava",
+    "username": "stephen",
+    "executable": "/home/stephen/anaconda3/envs/detection3d/bin/python"
+}

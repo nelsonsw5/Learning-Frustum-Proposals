@@ -1,0 +1,33 @@
+2022-12-08 21:34:35,180 INFO    StreamThr :2849072 [internal.py:wandb_internal():88] W&B internal server running at pid: 2849072, started at: 2022-12-08 21:34:35.179201
+2022-12-08 21:34:35,183 DEBUG   HandlerThread:2849072 [handler.py:handle_request():138] handle_request: status
+2022-12-08 21:34:35,186 DEBUG   SenderThread:2849072 [sender.py:send_request():317] send_request: status
+2022-12-08 21:34:35,189 DEBUG   SenderThread:2849072 [sender.py:send():303] send: header
+2022-12-08 21:34:35,189 INFO    WriterThread:2849072 [datastore.py:open_for_write():75] open: /home/stephen/Projects/Learned-Frustum-Proposals/Thesis/wandb/run-20221208_213435-25elg9xa/run-25elg9xa.wandb
+2022-12-08 21:34:35,209 DEBUG   SenderThread:2849072 [sender.py:send():303] send: run
+2022-12-08 21:34:35,439 DEBUG   HandlerThread:2849072 [handler.py:handle_request():138] handle_request: check_version
+2022-12-08 21:34:35,441 INFO    SenderThread:2849072 [dir_watcher.py:__init__():216] watching files in: /home/stephen/Projects/Learned-Frustum-Proposals/Thesis/wandb/run-20221208_213435-25elg9xa/files
+2022-12-08 21:34:35,442 INFO    SenderThread:2849072 [sender.py:_start_run_threads():928] run started: 25elg9xa with start time 1670560475.175563
+2022-12-08 21:34:35,442 DEBUG   SenderThread:2849072 [sender.py:send():303] send: summary
+2022-12-08 21:34:35,442 INFO    SenderThread:2849072 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-08 21:34:35,443 DEBUG   SenderThread:2849072 [sender.py:send_request():317] send_request: check_version
+2022-12-08 21:34:35,612 DEBUG   HandlerThread:2849072 [handler.py:handle_request():138] handle_request: run_start
+2022-12-08 21:34:35,617 DEBUG   HandlerThread:2849072 [meta.py:__init__():34] meta init
+2022-12-08 21:34:35,617 DEBUG   HandlerThread:2849072 [meta.py:__init__():49] meta init done
+2022-12-08 21:34:35,617 DEBUG   HandlerThread:2849072 [meta.py:probe():215] probe
+2022-12-08 21:34:35,629 DEBUG   HandlerThread:2849072 [meta.py:_setup_git():205] setup git
+2022-12-08 21:34:35,653 DEBUG   HandlerThread:2849072 [meta.py:_setup_git():212] setup git done
+2022-12-08 21:34:35,654 DEBUG   HandlerThread:2849072 [meta.py:_save_pip():53] save pip
+2022-12-08 21:34:35,655 DEBUG   HandlerThread:2849072 [meta.py:_save_pip():67] save pip done
+2022-12-08 21:34:35,655 DEBUG   HandlerThread:2849072 [meta.py:_save_conda():74] save conda
+2022-12-08 21:34:36,445 INFO    Thread-13 :2849072 [dir_watcher.py:_on_file_created():275] file/dir created: /home/stephen/Projects/Learned-Frustum-Proposals/Thesis/wandb/run-20221208_213435-25elg9xa/files/wandb-summary.json
+2022-12-08 21:34:36,446 INFO    Thread-13 :2849072 [dir_watcher.py:_on_file_created():275] file/dir created: /home/stephen/Projects/Learned-Frustum-Proposals/Thesis/wandb/run-20221208_213435-25elg9xa/files/requirements.txt
+2022-12-08 21:34:36,446 INFO    Thread-13 :2849072 [dir_watcher.py:_on_file_created():275] file/dir created: /home/stephen/Projects/Learned-Frustum-Proposals/Thesis/wandb/run-20221208_213435-25elg9xa/files/conda-environment.yaml
+2022-12-08 21:34:40,919 DEBUG   HandlerThread:2849072 [meta.py:_save_conda():84] save conda done
+2022-12-08 21:34:40,919 DEBUG   HandlerThread:2849072 [meta.py:probe():253] probe done
+2022-12-08 21:34:40,960 DEBUG   SenderThread:2849072 [sender.py:send():303] send: files
+2022-12-08 21:34:40,961 INFO    SenderThread:2849072 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-12-08 21:34:41,409 INFO    Thread-17 :2849072 [upload_job.py:push():143] Uploaded file /tmp/tmp9y9p_w0pwandb/2zpy99dw-wandb-metadata.json
+2022-12-08 21:34:41,448 INFO    Thread-13 :2849072 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/stephen/Projects/Learned-Frustum-Proposals/Thesis/wandb/run-20221208_213435-25elg9xa/files/conda-environment.yaml
+2022-12-08 21:34:41,448 INFO    Thread-13 :2849072 [dir_watcher.py:_on_file_created():275] file/dir created: /home/stephen/Projects/Learned-Frustum-Proposals/Thesis/wandb/run-20221208_213435-25elg9xa/files/wandb-metadata.json
+2022-12-08 21:34:42,613 INFO    MainThread:2849072 [internal.py:handle_exit():78] Internal process exited
+2022-12-08 21:34:42,614 WARNING MsgRouterThr:2849072 [router.py:message_loop():74] EOFError seen in message_loop
