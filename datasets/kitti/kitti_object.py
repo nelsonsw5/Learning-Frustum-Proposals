@@ -7,13 +7,11 @@ from __future__ import print_function
 
 import os
 import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
 import numpy as np
 import cv2
 from PIL import Image
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-ROOT_DIR = os.path.dirname(BASE_DIR)
-sys.path.append(os.path.join(ROOT_DIR, 'mayavi'))
-import kitti_util as utils
+import kitti.kitti_util as utils
 import shutil
 # import ipdb
 import time
