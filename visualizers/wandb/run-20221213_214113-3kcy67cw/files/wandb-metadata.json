@@ -1,0 +1,27 @@
+{
+    "os": "Linux-5.15.0-56-generic-x86_64-with-glibc2.17",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-12-14T04:41:14.368318",
+    "startedAt": "2022-12-14T04:41:13.980917",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3070",
+    "gpu_count": 4,
+    "cpu_count": 24,
+    "cuda": null,
+    "args": [
+        "--scene",
+        "000007"
+    ],
+    "state": "running",
+    "program": "2d_plot.py",
+    "codePath": "visualizers/2d_plot.py",
+    "git": {
+        "remote": "https://github.com/nelsonsw5/Learning-Frustum-Proposals.git",
+        "commit": "db89bd656b6231e9d6771356f61e5beea2fa0471"
+    },
+    "email": "stephenwnelson5@gmail.com",
+    "root": "/home/stephen/Projects/Learning-Frustum-Proposals",
+    "host": "ava",
+    "username": "stephen",
+    "executable": "/home/stephen/anaconda3/envs/thesis/bin/python"
+}

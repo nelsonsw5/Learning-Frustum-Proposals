@@ -1,0 +1,199 @@
+2022-12-14 09:00:03,693 INFO    StreamThr :56441 [internal.py:wandb_internal():88] W&B internal server running at pid: 56441, started at: 2022-12-14 09:00:03.692386
+2022-12-14 09:00:03,696 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: status
+2022-12-14 09:00:03,698 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: status
+2022-12-14 09:00:03,700 DEBUG   SenderThread:56441 [sender.py:send():301] send: header
+2022-12-14 09:00:03,700 INFO    WriterThread:56441 [datastore.py:open_for_write():75] open: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/run-3pw8bxo1.wandb
+2022-12-14 09:00:03,708 DEBUG   SenderThread:56441 [sender.py:send():301] send: run
+2022-12-14 09:00:03,934 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: check_version
+2022-12-14 09:00:03,935 INFO    SenderThread:56441 [dir_watcher.py:__init__():216] watching files in: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files
+2022-12-14 09:00:03,935 INFO    SenderThread:56441 [sender.py:_start_run_threads():912] run started: 3pw8bxo1 with start time 1671033603.686923
+2022-12-14 09:00:03,935 DEBUG   SenderThread:56441 [sender.py:send():301] send: summary
+2022-12-14 09:00:03,936 INFO    SenderThread:56441 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-12-14 09:00:03,936 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: check_version
+2022-12-14 09:00:04,049 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: run_start
+2022-12-14 09:00:04,054 DEBUG   HandlerThread:56441 [meta.py:__init__():34] meta init
+2022-12-14 09:00:04,055 DEBUG   HandlerThread:56441 [meta.py:__init__():49] meta init done
+2022-12-14 09:00:04,055 DEBUG   HandlerThread:56441 [meta.py:probe():215] probe
+2022-12-14 09:00:04,062 DEBUG   HandlerThread:56441 [meta.py:_setup_git():205] setup git
+2022-12-14 09:00:04,084 DEBUG   HandlerThread:56441 [meta.py:_setup_git():212] setup git done
+2022-12-14 09:00:04,085 DEBUG   HandlerThread:56441 [meta.py:_save_pip():53] save pip
+2022-12-14 09:00:04,085 DEBUG   HandlerThread:56441 [meta.py:_save_pip():67] save pip done
+2022-12-14 09:00:04,086 DEBUG   HandlerThread:56441 [meta.py:_save_conda():74] save conda
+2022-12-14 09:00:04,940 INFO    Thread-13 :56441 [dir_watcher.py:_on_file_created():275] file/dir created: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/requirements.txt
+2022-12-14 09:00:04,940 INFO    Thread-13 :56441 [dir_watcher.py:_on_file_created():275] file/dir created: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/wandb-summary.json
+2022-12-14 09:00:04,940 INFO    Thread-13 :56441 [dir_watcher.py:_on_file_created():275] file/dir created: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/conda-environment.yaml
+2022-12-14 09:00:05,744 DEBUG   HandlerThread:56441 [meta.py:_save_conda():84] save conda done
+2022-12-14 09:00:05,745 DEBUG   HandlerThread:56441 [meta.py:probe():253] probe done
+2022-12-14 09:00:05,751 DEBUG   SenderThread:56441 [sender.py:send():301] send: files
+2022-12-14 09:00:05,751 INFO    SenderThread:56441 [sender.py:_save_file():1155] saving file wandb-metadata.json with policy now
+2022-12-14 09:00:05,760 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: stop_status
+2022-12-14 09:00:05,761 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: stop_status
+2022-12-14 09:00:05,853 DEBUG   SenderThread:56441 [sender.py:send():301] send: telemetry
+2022-12-14 09:00:05,853 DEBUG   SenderThread:56441 [sender.py:send():301] send: config
+2022-12-14 09:00:05,939 INFO    Thread-13 :56441 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/conda-environment.yaml
+2022-12-14 09:00:05,939 INFO    Thread-13 :56441 [dir_watcher.py:_on_file_created():275] file/dir created: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/output.log
+2022-12-14 09:00:05,940 INFO    Thread-13 :56441 [dir_watcher.py:_on_file_created():275] file/dir created: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/wandb-metadata.json
+2022-12-14 09:00:06,893 DEBUG   SenderThread:56441 [sender.py:send():301] send: files
+2022-12-14 09:00:06,893 INFO    SenderThread:56441 [sender.py:_save_file():1155] saving file media/object3D/Point Cloud_0_c6413bb84bd7f7a0b311.pts.json with policy now
+2022-12-14 09:00:06,940 INFO    Thread-13 :56441 [dir_watcher.py:_on_file_created():275] file/dir created: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/media/object3D/Point Cloud_0_c6413bb84bd7f7a0b311.pts.json
+2022-12-14 09:00:06,940 INFO    Thread-13 :56441 [dir_watcher.py:_on_file_created():275] file/dir created: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/media
+2022-12-14 09:00:06,941 INFO    Thread-13 :56441 [dir_watcher.py:_on_file_created():275] file/dir created: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/media/object3D
+2022-12-14 09:00:07,061 DEBUG   SenderThread:56441 [sender.py:send():301] send: files
+2022-12-14 09:00:07,062 INFO    SenderThread:56441 [sender.py:_save_file():1155] saving file media/images/Key Frames_0_632d62bd05c9c98b7a05.png with policy now
+2022-12-14 09:00:07,063 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: partial_history
+2022-12-14 09:00:07,064 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:07,065 DEBUG   SenderThread:56441 [sender.py:send():301] send: history
+2022-12-14 09:00:07,065 DEBUG   SenderThread:56441 [sender.py:send():301] send: summary
+2022-12-14 09:00:07,066 INFO    SenderThread:56441 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-12-14 09:00:07,066 DEBUG   SenderThread:56441 [sender.py:send():301] send: exit
+2022-12-14 09:00:07,067 INFO    SenderThread:56441 [sender.py:send_exit():437] handling exit code: 0
+2022-12-14 09:00:07,067 INFO    SenderThread:56441 [sender.py:send_exit():439] handling runtime: 3
+2022-12-14 09:00:07,073 INFO    SenderThread:56441 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-12-14 09:00:07,073 INFO    SenderThread:56441 [sender.py:send_exit():445] send defer
+2022-12-14 09:00:07,073 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:07,074 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: defer
+2022-12-14 09:00:07,075 INFO    HandlerThread:56441 [handler.py:handle_request_defer():161] handle defer: 0
+2022-12-14 09:00:07,075 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: defer
+2022-12-14 09:00:07,075 INFO    SenderThread:56441 [sender.py:send_request_defer():454] handle sender defer: 0
+2022-12-14 09:00:07,075 INFO    SenderThread:56441 [sender.py:transition_state():458] send defer: 1
+2022-12-14 09:00:07,076 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: defer
+2022-12-14 09:00:07,076 INFO    HandlerThread:56441 [handler.py:handle_request_defer():161] handle defer: 1
+2022-12-14 09:00:07,149 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: defer
+2022-12-14 09:00:07,149 INFO    SenderThread:56441 [sender.py:send_request_defer():454] handle sender defer: 1
+2022-12-14 09:00:07,149 INFO    SenderThread:56441 [sender.py:transition_state():458] send defer: 2
+2022-12-14 09:00:07,150 DEBUG   SenderThread:56441 [sender.py:send():301] send: stats
+2022-12-14 09:00:07,150 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: defer
+2022-12-14 09:00:07,151 INFO    HandlerThread:56441 [handler.py:handle_request_defer():161] handle defer: 2
+2022-12-14 09:00:07,151 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: defer
+2022-12-14 09:00:07,151 INFO    SenderThread:56441 [sender.py:send_request_defer():454] handle sender defer: 2
+2022-12-14 09:00:07,151 INFO    SenderThread:56441 [sender.py:transition_state():458] send defer: 3
+2022-12-14 09:00:07,151 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: defer
+2022-12-14 09:00:07,151 INFO    HandlerThread:56441 [handler.py:handle_request_defer():161] handle defer: 3
+2022-12-14 09:00:07,152 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: defer
+2022-12-14 09:00:07,152 INFO    SenderThread:56441 [sender.py:send_request_defer():454] handle sender defer: 3
+2022-12-14 09:00:07,152 INFO    SenderThread:56441 [sender.py:transition_state():458] send defer: 4
+2022-12-14 09:00:07,152 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: defer
+2022-12-14 09:00:07,152 INFO    HandlerThread:56441 [handler.py:handle_request_defer():161] handle defer: 4
+2022-12-14 09:00:07,152 DEBUG   SenderThread:56441 [sender.py:send():301] send: summary
+2022-12-14 09:00:07,153 INFO    SenderThread:56441 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-12-14 09:00:07,153 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: defer
+2022-12-14 09:00:07,153 INFO    SenderThread:56441 [sender.py:send_request_defer():454] handle sender defer: 4
+2022-12-14 09:00:07,153 INFO    SenderThread:56441 [sender.py:transition_state():458] send defer: 5
+2022-12-14 09:00:07,154 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: defer
+2022-12-14 09:00:07,154 INFO    HandlerThread:56441 [handler.py:handle_request_defer():161] handle defer: 5
+2022-12-14 09:00:07,154 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: defer
+2022-12-14 09:00:07,154 INFO    SenderThread:56441 [sender.py:send_request_defer():454] handle sender defer: 5
+2022-12-14 09:00:07,175 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:07,277 INFO    SenderThread:56441 [sender.py:transition_state():458] send defer: 6
+2022-12-14 09:00:07,277 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:07,278 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: defer
+2022-12-14 09:00:07,278 INFO    HandlerThread:56441 [handler.py:handle_request_defer():161] handle defer: 6
+2022-12-14 09:00:07,279 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: defer
+2022-12-14 09:00:07,279 INFO    SenderThread:56441 [sender.py:send_request_defer():454] handle sender defer: 6
+2022-12-14 09:00:07,380 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:07,690 INFO    Thread-17 :56441 [upload_job.py:push():139] Uploaded file /tmp/tmpye8kmv2nwandb/1vxdspxq-wandb-metadata.json
+2022-12-14 09:00:07,895 INFO    SenderThread:56441 [sender.py:transition_state():458] send defer: 7
+2022-12-14 09:00:07,895 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:07,896 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: defer
+2022-12-14 09:00:07,896 INFO    HandlerThread:56441 [handler.py:handle_request_defer():161] handle defer: 7
+2022-12-14 09:00:07,897 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: defer
+2022-12-14 09:00:07,897 INFO    SenderThread:56441 [sender.py:send_request_defer():454] handle sender defer: 7
+2022-12-14 09:00:07,897 INFO    SenderThread:56441 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-12-14 09:00:07,940 INFO    Thread-13 :56441 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/output.log
+2022-12-14 09:00:07,941 INFO    SenderThread:56441 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/config.yaml
+2022-12-14 09:00:07,942 INFO    SenderThread:56441 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/wandb-summary.json
+2022-12-14 09:00:07,942 INFO    SenderThread:56441 [dir_watcher.py:_on_file_created():275] file/dir created: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/media/images/Key Frames_0_632d62bd05c9c98b7a05.png
+2022-12-14 09:00:07,942 INFO    SenderThread:56441 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/media
+2022-12-14 09:00:07,943 INFO    SenderThread:56441 [dir_watcher.py:_on_file_created():275] file/dir created: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/media/images
+2022-12-14 09:00:07,943 INFO    SenderThread:56441 [dir_watcher.py:finish():392] scan: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files
+2022-12-14 09:00:07,943 INFO    SenderThread:56441 [dir_watcher.py:finish():406] scan save: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/requirements.txt requirements.txt
+2022-12-14 09:00:07,943 INFO    SenderThread:56441 [dir_watcher.py:finish():406] scan save: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/output.log output.log
+2022-12-14 09:00:07,944 INFO    SenderThread:56441 [dir_watcher.py:finish():406] scan save: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/wandb-metadata.json wandb-metadata.json
+2022-12-14 09:00:07,944 INFO    SenderThread:56441 [dir_watcher.py:finish():406] scan save: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/config.yaml config.yaml
+2022-12-14 09:00:07,944 INFO    SenderThread:56441 [dir_watcher.py:finish():406] scan save: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/conda-environment.yaml conda-environment.yaml
+2022-12-14 09:00:07,944 INFO    SenderThread:56441 [dir_watcher.py:finish():406] scan save: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/wandb-summary.json wandb-summary.json
+2022-12-14 09:00:07,945 INFO    SenderThread:56441 [dir_watcher.py:finish():406] scan save: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/media/images/Key Frames_0_632d62bd05c9c98b7a05.png media/images/Key Frames_0_632d62bd05c9c98b7a05.png
+2022-12-14 09:00:07,950 INFO    SenderThread:56441 [dir_watcher.py:finish():406] scan save: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/media/object3D/Point Cloud_0_c6413bb84bd7f7a0b311.pts.json media/object3D/Point Cloud_0_c6413bb84bd7f7a0b311.pts.json
+2022-12-14 09:00:07,951 INFO    SenderThread:56441 [sender.py:transition_state():458] send defer: 8
+2022-12-14 09:00:07,956 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: defer
+2022-12-14 09:00:07,957 INFO    HandlerThread:56441 [handler.py:handle_request_defer():161] handle defer: 8
+2022-12-14 09:00:07,967 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: defer
+2022-12-14 09:00:07,967 INFO    SenderThread:56441 [sender.py:send_request_defer():454] handle sender defer: 8
+2022-12-14 09:00:07,968 INFO    SenderThread:56441 [file_pusher.py:finish():168] shutting down file pusher
+2022-12-14 09:00:07,998 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:07,998 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:08,100 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:08,100 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:08,202 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:08,203 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:08,276 INFO    Thread-19 :56441 [upload_job.py:push():139] Uploaded file /tmp/tmpye8kmv2nwandb/1557689s-media/images/Key Frames_0_632d62bd05c9c98b7a05.png
+2022-12-14 09:00:08,305 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:08,305 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:08,350 INFO    Thread-20 :56441 [upload_job.py:push():139] Uploaded file /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/requirements.txt
+2022-12-14 09:00:08,359 INFO    Thread-21 :56441 [upload_job.py:push():139] Uploaded file /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/output.log
+2022-12-14 09:00:08,363 INFO    Thread-22 :56441 [upload_job.py:push():139] Uploaded file /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/config.yaml
+2022-12-14 09:00:08,384 INFO    Thread-23 :56441 [upload_job.py:push():139] Uploaded file /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/conda-environment.yaml
+2022-12-14 09:00:08,407 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:08,407 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:08,419 INFO    Thread-24 :56441 [upload_job.py:push():139] Uploaded file /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/files/wandb-summary.json
+2022-12-14 09:00:08,510 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:08,510 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:08,612 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:08,612 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:08,690 INFO    Thread-18 :56441 [upload_job.py:push():139] Uploaded file /tmp/tmpye8kmv2nwandb/3ik1x4th-media/object3D/Point Cloud_0_c6413bb84bd7f7a0b311.pts.json
+2022-12-14 09:00:08,714 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:08,714 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:08,768 INFO    Thread-25 :56441 [upload_job.py:push():139] Uploaded file /tmp/tmpye8kmv2nwandb/2dnq1ajb-media/images/Key Frames_0_632d62bd05c9c98b7a05.png
+2022-12-14 09:00:08,816 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:08,816 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:08,918 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:08,918 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:09,020 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:09,021 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:09,123 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:09,123 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:09,225 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:09,225 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:09,327 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:09,327 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:09,428 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:09,429 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:09,530 INFO    Thread-26 :56441 [upload_job.py:push():139] Uploaded file /tmp/tmpye8kmv2nwandb/35ibatd6-media/object3D/Point Cloud_0_c6413bb84bd7f7a0b311.pts.json
+2022-12-14 09:00:09,531 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:09,532 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:09,633 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:09,634 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:09,735 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:09,736 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:09,737 INFO    Thread-12 :56441 [sender.py:transition_state():458] send defer: 9
+2022-12-14 09:00:09,737 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: defer
+2022-12-14 09:00:09,737 INFO    HandlerThread:56441 [handler.py:handle_request_defer():161] handle defer: 9
+2022-12-14 09:00:09,738 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: defer
+2022-12-14 09:00:09,738 INFO    SenderThread:56441 [sender.py:send_request_defer():454] handle sender defer: 9
+2022-12-14 09:00:09,800 INFO    SenderThread:56441 [sender.py:transition_state():458] send defer: 10
+2022-12-14 09:00:09,801 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: defer
+2022-12-14 09:00:09,801 INFO    HandlerThread:56441 [handler.py:handle_request_defer():161] handle defer: 10
+2022-12-14 09:00:09,801 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: defer
+2022-12-14 09:00:09,801 INFO    SenderThread:56441 [sender.py:send_request_defer():454] handle sender defer: 10
+2022-12-14 09:00:09,801 INFO    SenderThread:56441 [sender.py:transition_state():458] send defer: 11
+2022-12-14 09:00:09,802 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: defer
+2022-12-14 09:00:09,802 DEBUG   SenderThread:56441 [sender.py:send():301] send: final
+2022-12-14 09:00:09,802 INFO    HandlerThread:56441 [handler.py:handle_request_defer():161] handle defer: 11
+2022-12-14 09:00:09,802 DEBUG   SenderThread:56441 [sender.py:send():301] send: footer
+2022-12-14 09:00:09,803 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: defer
+2022-12-14 09:00:09,803 INFO    SenderThread:56441 [sender.py:send_request_defer():454] handle sender defer: 11
+2022-12-14 09:00:09,838 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: poll_exit
+2022-12-14 09:00:09,838 DEBUG   SenderThread:56441 [sender.py:send_request():315] send_request: poll_exit
+2022-12-14 09:00:09,838 INFO    SenderThread:56441 [file_pusher.py:join():173] waiting for file pusher
+2022-12-14 09:00:10,578 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: sampled_history
+2022-12-14 09:00:10,580 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: get_summary
+2022-12-14 09:00:10,581 INFO    MainThread:56441 [wandb_run.py:_footer_history_summary_info():3321] rendering history
+2022-12-14 09:00:10,581 INFO    MainThread:56441 [wandb_run.py:_footer_history_summary_info():3353] rendering summary
+2022-12-14 09:00:10,581 INFO    MainThread:56441 [wandb_run.py:_footer_sync_info():3277] logging synced files
+2022-12-14 09:00:10,582 DEBUG   HandlerThread:56441 [handler.py:handle_request():138] handle_request: shutdown
+2022-12-14 09:00:10,582 INFO    HandlerThread:56441 [handler.py:finish():807] shutting down handler
+2022-12-14 09:00:10,802 INFO    WriterThread:56441 [datastore.py:close():279] close: /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/wandb/run-20221214_090003-3pw8bxo1/run-3pw8bxo1.wandb
+2022-12-14 09:00:11,477 INFO    SenderThread:56441 [sender.py:finish():1315] shutting down sender
+2022-12-14 09:00:11,477 INFO    SenderThread:56441 [file_pusher.py:finish():168] shutting down file pusher
+2022-12-14 09:00:11,477 INFO    SenderThread:56441 [file_pusher.py:join():173] waiting for file pusher
+2022-12-14 09:00:11,585 INFO    MainThread:56441 [internal.py:handle_exit():78] Internal process exited

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "build_frustum.py", line 176, in <module>
+    main(args)
+  File "build_frustum.py", line 107, in main
+    if objects[obj_idx].type not in type_whitelist:
+NameError: name 'type_whitelist' is not defined

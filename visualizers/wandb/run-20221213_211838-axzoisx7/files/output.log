@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "2d_plot.py", line 75, in <module>
+    main(args)
+  File "2d_plot.py", line 27, in main
+    pc = np.fromfile(f, dtype=np.float32).reshape((-1,4))
+NameError: name 'np' is not defined

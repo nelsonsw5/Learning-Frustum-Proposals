@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "build_frustum.py", line 182, in <module>
+    main(args)
+  File "build_frustum.py", line 77, in main
+    dataset = kitti_object(os.path.join(ROOT_DIR,'dataset/KITTI/object'), split)
+NameError: name 'split' is not defined

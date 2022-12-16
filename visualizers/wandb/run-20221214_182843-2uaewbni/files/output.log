@@ -1,0 +1,21 @@
+/home/stephen/anaconda3/envs/thesis/lib/python3.8/site-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.16.5 and <1.23.0 is required for this version of SciPy (detected version 1.23.1
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+> /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/build_frustum.py(169)main()
+-> pc_dict = run.get_point_cloud_log(input_list[0])
+[array([[2.6888967e+00, 6.7166901e-01, 5.3226357e+01, 3.9999999e-02],
+       [2.5722544e+00, 6.9330448e-01, 5.4317219e+01, 0.0000000e+00],
+       [2.4083138e+00, 6.9780302e-01, 5.4486217e+01, 1.2000000e-01],
+       ...,
+       [9.9858083e-02, 1.7350740e+00, 1.1981598e+01, 0.0000000e+00],
+       [6.3550070e-02, 1.7963668e+00, 1.2354985e+01, 1.5000001e-01],
+       [2.6363011e-02, 1.8683482e+00, 1.2793266e+01, 2.5000000e-01]],
+      dtype=float32)]
+1
+array([[2.6888967e+00, 6.7166901e-01, 5.3226357e+01, 3.9999999e-02],
+       [2.5722544e+00, 6.9330448e-01, 5.4317219e+01, 0.0000000e+00],
+       [2.4083138e+00, 6.9780302e-01, 5.4486217e+01, 1.2000000e-01],
+       ...,
+       [9.9858083e-02, 1.7350740e+00, 1.1981598e+01, 0.0000000e+00],
+       [6.3550070e-02, 1.7963668e+00, 1.2354985e+01, 1.5000001e-01],
+       [2.6363011e-02, 1.8683482e+00, 1.2793266e+01, 2.5000000e-01]],
+      dtype=float32)

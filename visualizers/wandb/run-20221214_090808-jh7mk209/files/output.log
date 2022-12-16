@@ -1,0 +1,8 @@
+
+status:  True
+Traceback (most recent call last):
+  File "2d_plot.py", line 69, in <module>
+    main(args)
+  File "2d_plot.py", line 52, in main
+    dict_list = [pc_dict, img_dict]
+NameError: name 'pc_dict' is not defined

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "build_frustum.py", line 175, in <module>
+    main(args)
+  File "build_frustum.py", line 130, in main
+    _,inds = extract_pc_in_box3d(pc_in_box_fov, box3d_pts_3d)#(375, 4)(1607,)
+NameError: name 'extract_pc_in_box3d' is not defined

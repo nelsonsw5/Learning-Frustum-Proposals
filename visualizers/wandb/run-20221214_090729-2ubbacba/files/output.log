@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "2d_plot.py", line 68, in <module>
+    main(args)
+  File "2d_plot.py", line 24, in main
+    im = cv2.imread('/multiview/3d-count/Kitti/training/image_2/' + args.scene + '.png')
+NameError: name 'cv2' is not defined
