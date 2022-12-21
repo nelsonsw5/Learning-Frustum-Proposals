@@ -7,7 +7,7 @@ import argparse
 from torch.utils.data import DataLoader
 
 from datasets.collate_func import get_collate_fn
-from datasets.density_point_cloud_data import get_dataset
+from datasets.dataset_utils import get_dataset
 
 from models.neonet import build_from_yaml, get_loss_fn
 from models.model_utils import load_model_chkp, NeonetTypes
@@ -33,11 +33,7 @@ def main(args):
 
 
     trn = get_dataset(
-        dataset_manager.train,
-        trn_cfg,
-        model_cfg,
-        max_val=max_val,
-        max_norm=True if task == NeonetTypes.REGRESSOR.value else False
+        trn_cfg
     )
 
     trn_loader = DataLoader(

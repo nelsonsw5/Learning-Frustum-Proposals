@@ -3,6 +3,7 @@ from typing import List, Dict
 import torch
 # from pytorch3d.structures import Pointclouds
 # from pytorch3d.ops import knn_points
+import pdb
 
 from transforms import MeanShift
 
@@ -150,3 +151,20 @@ def get_zero_padded_batch(input: List[torch.Tensor], flatten_last: bool = False)
         padded = padded.squeeze(-1)
 
     return padded
+
+
+
+def get_dataset(trn_cfg):
+    # Kitti, SunRGBD, 3DBev24K, Coolers
+    if trn_cfg[dataset][dir] == "Kitti":
+        dataset = Kitti()
+    if trn_cfg[dataset][dir] == "SunRGBD":
+        dataset = Kitti()
+    if trn_cfg[dataset][dir] == "3DBev24K":
+        dataset = Kitti()
+    if trn_cfg[dataset][dir] == "Coolers":
+        dataset = Kitti()
+    
+
+
+    return dataset

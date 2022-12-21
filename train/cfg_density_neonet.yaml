@@ -5,10 +5,10 @@ metadata:
   run_name: debug-test
   viz: True
 model:
-  cfg: "/home/stephen/Projects/Learning-Frustum-Proposals/models/cfgs/density_pointnet_beams.yaml"
+  cfg: "/home/stephen/Projects/Learning-Frustum-Proposals/models/cfgs/density_learned_frustums.yaml"
   weights: null # path to pretained weights
 dataset:
-  dir: "/multiview/3d-count/coolers"
+  dir: Kitti # Kitti, SunRGBD, 3DBev24K, Coolers
   use_normals: False
   drop_last: False
   cache: False  # bool or float in [0,1]
