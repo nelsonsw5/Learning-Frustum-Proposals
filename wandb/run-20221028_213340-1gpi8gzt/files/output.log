@@ -1,4 +1,0 @@
-points:  /multiview/3d-count/OFFICIAL_SUNRGBD/sunrgbd/results/000001/000001_points.obj
-gt:  /multiview/3d-count/OFFICIAL_SUNRGBD/sunrgbd/results/000001/000001_gt.obj
-pred:  /multiview/3d-count/OFFICIAL_SUNRGBD/sunrgbd/results/000001/000001_pred.obj
-> /home/stephen/Projects/Learned-Frustum-Proposals/Thesis/viz_display_audit.py(35)main()

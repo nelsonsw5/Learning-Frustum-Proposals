@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "viz_display_audit.py", line 80, in <module>
-    main(args)
-  File "viz_display_audit.py", line 41, in main
-    data = pkl.load(file)
-NameError: name 'pkl' is not defined

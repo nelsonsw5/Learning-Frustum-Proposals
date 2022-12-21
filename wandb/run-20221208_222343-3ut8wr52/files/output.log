@@ -1,2 +1,0 @@
-/home/stephen/anaconda3/envs/detection3d/lib/python3.8/site-packages/pytorch3d/io/obj_io.py:542: UserWarning: No mtl file provided
-  warnings.warn("No mtl file provided")

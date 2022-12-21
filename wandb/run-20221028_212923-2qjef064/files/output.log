@@ -1,4 +1,0 @@
-Namespace(scene='/multiview/3d-count/OFFICIAL_SUNRGBD/sunrgbd/results/000001/')
-> /home/stephen/Projects/Learned-Frustum-Proposals/Thesis/viz_display_audit.py(30)main()
--> pc, _, _ = load_obj(args.obj)
-Namespace(scene='/multiview/3d-count/OFFICIAL_SUNRGBD/sunrgbd/results/000001/')

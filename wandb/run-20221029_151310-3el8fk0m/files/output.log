@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "viz_display_audit.py", line 80, in <module>
-    main(args)
-  File "viz_display_audit.py", line 40, in main
-    with open('sunrgbd_infos_val.pkl','rb') as file:
-FileNotFoundError: [Errno 2] No such file or directory: 'sunrgbd_infos_val.pkl'
