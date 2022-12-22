@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "build_frustum.py", line 184, in <module>
-    main(args)
-  File "build_frustum.py", line 97, in main
-    for data_idx in tqdm(data_idx_list):
-NameError: name 'data_idx_list' is not defined

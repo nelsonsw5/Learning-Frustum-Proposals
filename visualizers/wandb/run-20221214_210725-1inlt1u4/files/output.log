@@ -1,5 +1,0 @@
-> /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/build_frustum.py(111)main()
--> pc_rect = np.zeros_like(pc_velo)
-[<kitti_util.Object3d object at 0x7fc008258dc0>, <kitti_util.Object3d object at 0x7fc008258be0>, <kitti_util.Object3d object at 0x7fc008258d60>]
-<kitti_util.Object3d object at 0x7fc008258dc0>
-array([614.24, 181.78, 727.31, 284.77])

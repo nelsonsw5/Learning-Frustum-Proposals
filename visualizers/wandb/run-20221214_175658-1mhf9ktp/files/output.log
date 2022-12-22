@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "build_frustum.py", line 81, in <module>
-    main(args)
-  File "build_frustum.py", line 51, in main
-    objects = dataset.get_label_objects(args.scene)
-  File "/home/stephen/Projects/Learning-Frustum-Proposals/visualizers/kitti_object.py", line 68, in get_label_objects
-    assert(idx<self.num_samples and self.split=='training')
-TypeError: '<' not supported between instances of 'str' and 'int'

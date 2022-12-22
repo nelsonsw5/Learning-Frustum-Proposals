@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "build_frustum.py", line 80, in <module>
-    main(args)
-  File "build_frustum.py", line 49, in main
-    calib = dataset.get_calibration(args.scene) # 3 by 4 matrix
-NameError: name 'dataset' is not defined

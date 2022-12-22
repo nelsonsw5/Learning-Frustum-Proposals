@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "build_frustum.py", line 185, in <module>
-    main(args)
-  File "build_frustum.py", line 153, in main
-    objects = get_label_objects(data_idx)
-NameError: name 'get_label_objects' is not defined

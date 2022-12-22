@@ -1,4 +1,0 @@
-/home/stephen/anaconda3/envs/thesis/lib/python3.8/site-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.16.5 and <1.23.0 is required for this version of SciPy (detected version 1.23.1
-  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
-> /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/build_frustum.py(169)main()
--> pc_dict = run.get_point_cloud_log(input_list[0][:,0:3])

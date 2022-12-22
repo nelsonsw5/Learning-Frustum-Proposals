@@ -1,6 +1,9 @@
 import copy
 import pickle
 import numpy as np
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), './')))
 import kitti_util as utils
 from torch.utils.data import Dataset
 import pdb
@@ -17,6 +20,9 @@ class KittiDataset(Dataset):
         self.data_path = data_path + "training/"
         self.id_files = data_path + "ImageSets/"
         self.data_ids = self.load_dataset_ids(self.id_files, test)
+        self.classes = ['Car', 'Pedestrian','Cyclist']
+        self.n_geo_types = len(self.classes)
+        self.max_val = self.get_max_val()
 
     def load_dataset_ids(self, data_path, test):
         ids = []
@@ -29,6 +35,10 @@ class KittiDataset(Dataset):
         for id in lines:
             ids.append(id[0:-1])
         return ids
+
+    def get_n_geo_types(self):
+
+        return self.n_geo_types
 
     def get_point_cloud(self, idx):
         cloud_path = self.data_path + 'velodyne/' + idx + '.png'
@@ -65,6 +75,10 @@ class KittiDataset(Dataset):
         input.update({})
 
         return input
+    def get_max_val(self):
+        max_val = 15
+
+        return max_val
 
 
 

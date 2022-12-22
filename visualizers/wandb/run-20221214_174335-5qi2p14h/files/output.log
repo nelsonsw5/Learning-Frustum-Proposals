@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "build_frustum.py", line 184, in <module>
-    main(args)
-  File "build_frustum.py", line 152, in main
-    pdb.set_trace()
-NameError: name 'pdb' is not defined

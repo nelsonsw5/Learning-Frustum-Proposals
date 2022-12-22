@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "build_frustum.py", line 183, in <module>
-    main(args)
-  File "build_frustum.py", line 150, in main
-    calibs = read_calib_file(calib_filepath)
-NameError: name 'calib_filepath' is not defined

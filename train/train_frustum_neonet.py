@@ -12,10 +12,13 @@ from datasets.dataset_utils import get_dataset
 from models.neonet import build_from_yaml, get_loss_fn
 from models.model_utils import load_model_chkp, NeonetTypes
 
-from trainers.density_trainer import TRAINERS
+from trainers.learned_frustum_trainer import TRAINERS
 from train.train_utils import setup
 
 from utils import get_yaml
+from datasets.kitti.kitti_dataset import KittiDataset
+# from datasets.sunrgbd.sunrgbd_dataset import S
+
 
 
 def main(args):
@@ -27,45 +30,30 @@ def main(args):
     else:
         model_cfg = get_yaml(trn_cfg["model"]["cfg"])
 
-    dataset_manager, trn_cfg, model_cfg = setup(trn_cfg, model_cfg)
-    max_val = dataset_manager.train.normalizer['max']
-    task = model_cfg["head"]["type"]
 
-
-    trn = get_dataset(
-        trn_cfg
-    )
+    trn = KittiDataset(data_path='/Users/stephennelson/Projects/Data/Kitti/')
 
     trn_loader = DataLoader(
         trn,
         batch_size=trn_cfg["optimization"]["batch_size"],
-        shuffle=True,
-        collate_fn=get_collate_fn(model_cfg["point_encoder"]["type"])
+        shuffle=True
     )
 
-    if not trn_cfg["dataset"]["notest"]:
-        test = get_dataset(
-            dataset_manager.val,
-            trn_cfg,
-            model_cfg,
-            max_val=max_val,
-            max_norm=False
-        )
-        test_loader = DataLoader(
-            test,
-            batch_size=trn_cfg["optimization"]["test_batch_size"],
-            shuffle=False,
-            collate_fn=get_collate_fn(model_cfg["point_encoder"]["type"])
+    test = KittiDataset(data_path='/Users/stephennelson/Projects/Data/Kitti/',test=True)
 
-        )
-
+    test_loader = DataLoader(
+        test,
+        batch_size=trn_cfg["optimization"]["test_batch_size"],
+        shuffle=False
+    )
 
     model, model_cfg = build_from_yaml(
         fpath_or_dict=model_cfg,
         num_geo_types=trn.get_n_geo_types(),
+        max_val=trn.get_max_val(),
         use_cuda=trn_cfg["optimization"]["cuda"],
-        max_val=max_val
     )
+    pdb.set_trace()
 
     if trn_cfg["model"]["weights"]:
         model = load_model_chkp(model, trn_cfg["model"]["weights"], trn_cfg["optimization"]["cuda"])
@@ -102,7 +90,7 @@ def main(args):
 
 def parse_args():
     parser = argparse.ArgumentParser('Model')
-    parser.add_argument('--trn-cfg', type=str, default="./cfg_density_neonet.yaml", help='Path to train config file')
+    parser.add_argument('--trn-cfg', type=str, default="./cfg_frustum_neonet.yaml", help='Path to train config file')
     parser.add_argument('--model-cfg', type=str, default=None, help='optional model cfg path override')
     return parser.parse_args()
 

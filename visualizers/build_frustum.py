@@ -41,8 +41,7 @@ def main(args):
     if args.dataset == "kitti":
         scene = str(args.scene).zfill(6)
         dataset = kitti_object()
-        with open('/multiview/3d-count/Kitti/training/label_2/'+ scene + '.txt') as label_file:
-            lines = label_file.readlines()
+        
         im = cv2.imread('/multiview/3d-count/Kitti/training/image_2/' + scene + '.png')
         point_cloud = '/multiview/3d-count/Kitti/training/velodyne/' + scene + ".bin"
         with open(point_cloud, "rb") as f:

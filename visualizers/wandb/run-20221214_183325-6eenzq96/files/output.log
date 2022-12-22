@@ -1,9 +1,0 @@
-> /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/3d_plot_kitti.py(108)main()
--> pc_dict = run.get_point_cloud_log(pc, boxes=final_boxes)
-tensor([[-20.9960, -57.6570,   2.2840],
-        [-21.1810, -57.6020,   2.2840],
-        [-21.7020, -57.3440,   2.2820],
-        ...,
-        [  1.4060,  -3.7350,  -1.7450],
-        [  1.3950,  -3.7410,  -1.7460],
-        [  1.4020,  -3.7770,  -1.7630]])

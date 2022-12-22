@@ -1,9 +1,0 @@
-> /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/build_frustum.py(62)main()
--> pc_dict = run.get_point_cloud_log(pc_image_coord)
-array([[608.51238163, 152.92597813],
-       [606.23509359, 152.97482369],
-       [603.94900345, 153.02756797],
-       ...,
-       [919.81464386, 527.46977969],
-       [916.87893714, 526.87030091],
-       [914.04353221, 526.46401023]])

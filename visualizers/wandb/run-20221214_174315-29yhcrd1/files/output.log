@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "build_frustum.py", line 184, in <module>
-    main(args)
-  File "build_frustum.py", line 151, in main
-    calibs = read_calib_file(str(calib_filepath))
-TypeError: read_calib_file() missing 1 required positional argument: 'filepath'

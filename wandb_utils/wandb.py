@@ -102,7 +102,7 @@ class WandB:
         if self.enabled and self.log_objects:
             wandb.log({name: wandb.Image(image_path)})
 
-    def get_img_log(self, fpath_or_list, key="Key Frames", caption=None):
+    def get_img_log(self, fpath_or_list, key="Key Frames", caption=None, itrid=0):
         """
 
         @param fpath_or_list: {str, list}
@@ -111,7 +111,6 @@ class WandB:
         @param key: (str) name of image object, key for dict
         @return:
         """
-
         if isinstance(fpath_or_list, list):
             img_list = []
             for path_i in fpath_or_list:
@@ -134,7 +133,6 @@ class WandB:
 
         else:
             image = wandb.Image(fpath_or_list, caption=caption)
-
         img_dict = {key: image}
 
         return img_dict

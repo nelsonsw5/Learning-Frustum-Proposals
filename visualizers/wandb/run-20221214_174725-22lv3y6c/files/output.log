@@ -1,3 +1,0 @@
-> /home/stephen/Projects/Learning-Frustum-Proposals/visualizers/build_frustum.py(155)main()
--> pc_rect[:,0:3] = project_velo_to_rect(pc_velo[:,0:3])
-

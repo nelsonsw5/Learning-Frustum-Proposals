@@ -1,8 +1,0 @@
-/home/stephen/anaconda3/envs/thesis/lib/python3.8/site-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.16.5 and <1.23.0 is required for this version of SciPy (detected version 1.23.1
-  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
-Traceback (most recent call last):
-  File "build_frustum.py", line 182, in <module>
-    main(args)
-  File "build_frustum.py", line 162, in main
-    swap = KittiPoints2Wandb()
-NameError: name 'KittiPoints2Wandb' is not defined

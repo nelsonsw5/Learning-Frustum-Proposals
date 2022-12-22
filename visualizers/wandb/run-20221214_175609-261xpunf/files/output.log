@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "build_frustum.py", line 81, in <module>
-    main(args)
-  File "build_frustum.py", line 50, in main
-    calib = dataset.get_calibration(args.scene) # 3 by 4 matrix
-  File "/home/stephen/Projects/Learning-Frustum-Proposals/visualizers/kitti_object.py", line 63, in get_calibration
-    assert(idx<self.num_samples)
-TypeError: '<' not supported between instances of 'str' and 'int'
