@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "build_frustum_dataset.py", line 101, in <module>
+    main(args)
+  File "build_frustum_dataset.py", line 80, in main
+    create_frustum_data(dataset,New_Directory, args.frustum_method, args.viz)
+  File "build_frustum_dataset.py", line 59, in create_frustum_data
+    dict_list.append(run.get_img_log(image, key='test'))
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/wandb_utils/wandb.py", line 135, in get_img_log
+    image = wandb.Image(fpath_or_list, caption=caption)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/wandb/sdk/data_types/image.py", line 135, in __init__
+    self._initialize_from_data(data_or_path, mode)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/wandb/sdk/data_types/image.py", line 257, in _initialize_from_data
+    if data.ndim > 2:
+AttributeError: 'tuple' object has no attribute 'ndim'

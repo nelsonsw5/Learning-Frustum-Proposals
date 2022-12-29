@@ -1,8 +1,8 @@
 metadata:
   wandb_entity: prj-research
   wandb_project: Learning-Frustum-Proposals
-  wandb_group: debugging
-  run_name: debug-test
+  wandb_group: Debugging
+  run_name:
   viz: True
 model:
   cfg: "/Users/stephennelson/Projects/Learning-Frustum-Proposals/models/cfgs/learned_frustums.yaml"

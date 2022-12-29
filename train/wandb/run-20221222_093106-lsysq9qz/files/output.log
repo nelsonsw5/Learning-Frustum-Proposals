@@ -1,0 +1,2 @@
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/learned_frustum_trainer.py(64)_wandb_config()
+-> "dataset_id": self.train_dataloader.dataset.dataset_id,

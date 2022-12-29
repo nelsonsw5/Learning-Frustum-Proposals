@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "build_frustum_dataset.py", line 109, in <module>
+    main(args)
+  File "build_frustum_dataset.py", line 88, in main
+    create_frustum_data(dataset,New_Directory, args.frustum_method, args.viz)
+  File "build_frustum_dataset.py", line 59, in create_frustum_data
+    run.get
+AttributeError: 'WandB' object has no attribute 'get'

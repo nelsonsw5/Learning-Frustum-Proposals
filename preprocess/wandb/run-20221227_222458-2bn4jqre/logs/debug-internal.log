@@ -1,0 +1,31 @@
+2022-12-27 22:24:59,219 INFO    MainThread:23429 [internal.py:wandb_internal():92] W&B internal server running at pid: 23429, started at: 2022-12-27 22:24:59.219638
+2022-12-27 22:24:59,221 INFO    WriterThread:23429 [datastore.py:open_for_write():77] open: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221227_222458-2bn4jqre/run-2bn4jqre.wandb
+2022-12-27 22:24:59,222 DEBUG   SenderThread:23429 [sender.py:send():235] send: header
+2022-12-27 22:24:59,222 DEBUG   SenderThread:23429 [sender.py:send():235] send: run
+2022-12-27 22:24:59,349 ERROR   SenderThread:23429 [internal_api.py:execute():144] 500 response executing GraphQL.
+2022-12-27 22:24:59,349 ERROR   SenderThread:23429 [internal_api.py:execute():145] {"error":"internal database error"}
+2022-12-27 22:25:00,644 ERROR   SenderThread:23429 [internal_api.py:execute():144] 500 response executing GraphQL.
+2022-12-27 22:25:00,644 ERROR   SenderThread:23429 [internal_api.py:execute():145] {"error":"internal database error"}
+2022-12-27 22:25:03,022 ERROR   SenderThread:23429 [internal_api.py:execute():144] 500 response executing GraphQL.
+2022-12-27 22:25:03,023 ERROR   SenderThread:23429 [internal_api.py:execute():145] {"error":"internal database error"}
+2022-12-27 22:25:03,023 ERROR   SenderThread:23429 [retry.py:__call__():126] Retry attempt failed:
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 102, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 147, in execute
+    six.reraise(*sys.exc_info())
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/six.py", line 719, in reraise
+    raise value
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 141, in execute
+    return self.client.execute(*args, **kwargs)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 39, in execute
+    request.raise_for_status()
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/requests/models.py", line 960, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: https://api.wandb.ai/graphql
+2022-12-27 22:25:07,850 ERROR   SenderThread:23429 [internal_api.py:execute():144] 500 response executing GraphQL.
+2022-12-27 22:25:07,850 ERROR   SenderThread:23429 [internal_api.py:execute():145] {"error":"internal database error"}

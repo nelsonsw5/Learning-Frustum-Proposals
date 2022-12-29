@@ -131,8 +131,7 @@ class ThreeDimBoundBox(object):
 
             x, y, z = self.centroid
             w, d, h = self.dims
-
-
+            
             # get plane in x, y
             plane = [
                 [x + w/2, y + d/2],

@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "train_frustum_neonet.py", line 101, in <module>
+    main(args)
+  File "train_frustum_neonet.py", line 64, in main
+    trainer = TRAINERS[task](
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/learned_frustum_trainer.py", line 119, in __init__
+    super(RegressionTrainer, self).__init__(
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/learned_frustum_trainer.py", line 33, in __init__
+    super(DensityTrainer, self).__init__(
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/base_trainer.py", line 88, in __init__
+    self.chkp_dir = self._get_chkp_dir(self.model_name, optim_chkp, chkp_dir)
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/base_trainer.py", line 102, in _get_chkp_dir
+    chkp_dir = self._wandb_config(resume=resume, chkp_dir=chkp_dir)
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/learned_frustum_trainer.py", line 63, in _wandb_config
+    "dataset_id": self.train_dataloader.dataset.dataset_id,
+AttributeError: 'KittiDataset' object has no attribute 'dataset_id'

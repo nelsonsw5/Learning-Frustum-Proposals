@@ -1,6 +1,7 @@
 import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
+import pdb
 
 
 import argparse
@@ -9,7 +10,7 @@ from torch.utils.data import DataLoader
 from datasets.collate_func import get_collate_fn
 from datasets.dataset_utils import get_dataset
 
-from models.neonet import build_from_yaml, get_loss_fn
+from models.frustum_neonet import build_from_yaml, get_loss_fn
 from models.model_utils import load_model_chkp, NeonetTypes
 
 from trainers.learned_frustum_trainer import TRAINERS
@@ -30,7 +31,8 @@ def main(args):
     else:
         model_cfg = get_yaml(trn_cfg["model"]["cfg"])
 
-
+    max_val = 15
+    task = model_cfg["head"]["type"]
     trn = KittiDataset(data_path='/Users/stephennelson/Projects/Data/Kitti/')
 
     trn_loader = DataLoader(
@@ -50,10 +52,9 @@ def main(args):
     model, model_cfg = build_from_yaml(
         fpath_or_dict=model_cfg,
         num_geo_types=trn.get_n_geo_types(),
-        max_val=trn.get_max_val(),
+        max_val=max_val,
         use_cuda=trn_cfg["optimization"]["cuda"],
     )
-    pdb.set_trace()
 
     if trn_cfg["model"]["weights"]:
         model = load_model_chkp(model, trn_cfg["model"]["weights"], trn_cfg["optimization"]["cuda"])
@@ -79,12 +80,12 @@ def main(args):
     )
 
     print(f"TRAINING MODEL: {task}")
-    trainer.add_file_to_chkp(fpath=trn_cfg["model"]["cfg"])
-    trainer.add_file_to_chkp(fpath=dataset_manager.train.metadata_file)
-    trainer.write_json_to_chkp(
-        dta=dataset_manager.train.normalizer,
-        fname="normalizer.json"
-    )
+    # trainer.add_file_to_chkp(fpath=trn_cfg["model"]["cfg"])
+    # trainer.add_file_to_chkp(fpath=dataset_manager.train.metadata_file)
+    # trainer.write_json_to_chkp(
+    #     dta=,
+    #     fname="normalizer.json"
+    # )
     trainer.fit()
 
 

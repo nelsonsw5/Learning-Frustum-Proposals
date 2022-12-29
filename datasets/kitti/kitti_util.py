@@ -8,8 +8,9 @@ from __future__ import print_function
 import numpy as np
 import cv2
 import os
+import pdb
 
-class Object3d(object):
+class Label(object):
     ''' 3d object label '''
     def __init__(self, label_file_line):
         data = label_file_line.split(' ')
@@ -33,8 +34,8 @@ class Object3d(object):
         self.w = data[9] # box width
         self.l = data[10] # box length (in meters)
         self.t = (data[11],data[12],data[13]) # location (x,y,z) in camera coord.
+        self.loc = np.array([data[11],data[12],data[13]]) # location (x,y,z) in camera coord.
         self.ry = data[14] # yaw angle (around Y-axis in camera coordinates) [-pi..pi]
-
     def print_object(self):
         print('Type, truncation, occlusion, alpha: %s, %d, %d, %f' % \
             (self.type, self.truncation, self.occlusion, self.alpha))
@@ -261,7 +262,7 @@ def inverse_rigid_trans(Tr):
 
 def read_label(label_filename):
     lines = [line.rstrip() for line in open(label_filename)]
-    objects = [Object3d(line) for line in lines]
+    objects = [Label(line) for line in lines]
     return objects
 
 def load_image(img_filename):
@@ -326,11 +327,23 @@ def compute_box_3d(obj, P):
     if np.any(corners_3d[2,:]<0.1):
         corners_2d = None
         return corners_2d, np.transpose(corners_3d)
-    
-    # project the 3d bounding box into the image plane
-    corners_2d = project_to_image(np.transpose(corners_3d), P);
-    #print 'corners_2d: ', corners_2d
-    return corners_2d, np.transpose(corners_3d)
+    return np.transpose(corners_3d)
+
+def get_box_params(corners):
+    centroids = []
+    dims = []
+    for box in corners:
+        x = round(np.mean(box[:,0]))
+        y = round(np.mean(box[:,1]),2)
+        z = round(np.mean(box[:,2]),2)
+        centroids.append([x,y,z])
+        l = np.max(box[:,0]) - np.min(box[:,0])
+        w = np.max(box[:,1]) - np.min(box[:,1])
+        h = np.max(box[:,2]) - np.min(box[:,2])
+        dims.append([h,w,l])
+
+    return np.array(centroids), np.array(dims)
+
 
 
 def compute_orientation_3d(obj, P):
@@ -386,3 +399,30 @@ def draw_projected_box3d(image, qs, color=(255,255,255), thickness=2):
        i,j=k,k+4
        cv2.line(image, (qs[i,0],qs[i,1]), (qs[j,0],qs[j,1]), color, thickness, cv2.LINE_AA)
     return image
+
+
+
+### FRUSTUM CONSTRUCTION
+def in_hull(p, hull):
+    from scipy.spatial import Delaunay
+    if not isinstance(hull,Delaunay):
+        hull = Delaunay(hull)
+    return hull.find_simplex(p)>=0
+
+def extract_pc_in_box3d(pc, box3d):
+    ''' pc: (N,3), box3d: (8,3) '''
+    box3d_roi_inds = in_hull(pc[:,0:3], box3d)
+    return pc[box3d_roi_inds,:], box3d_roi_inds
+
+def get_lidar_in_image_fov(pc_velo, calib, xmin, ymin, xmax, ymax,return_more=False, clip_distance=2.0):
+    ''' Filter lidar points, keep those in image FOV '''
+    pts_2d = calib.project_velo_to_image(pc_velo)
+    fov_inds = (pts_2d[:,0]<xmax) & (pts_2d[:,0]>=xmin) & \
+        (pts_2d[:,1]<ymax) & (pts_2d[:,1]>=ymin)
+    fov_inds = fov_inds & (pc_velo[:,0]>clip_distance)
+    imgfov_pc_velo = pc_velo[fov_inds,:]
+
+    if return_more:
+        return imgfov_pc_velo, pts_2d, fov_inds
+    else:
+        return imgfov_pc_velo

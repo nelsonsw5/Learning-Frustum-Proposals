@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "build_frustum_dataset.py", line 104, in <module>
+    main(args)
+  File "build_frustum_dataset.py", line 83, in main
+    create_frustum_data(dataset,New_Directory, args.frustum_method, args.viz)
+  File "build_frustum_dataset.py", line 68, in create_frustum_data
+    run.log(log_dict)
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/wandb_utils/wandb.py", line 81, in log
+    self.run.log(log)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 256, in wrapper
+    return func(self, *args, **kwargs)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 222, in wrapper
+    return func(self, *args, **kwargs)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1545, in log
+    self._log(data=data, step=step, commit=commit)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1334, in _log
+    raise ValueError("Key values passed to `wandb.log` must be strings.")
+ValueError: Key values passed to `wandb.log` must be strings.

@@ -20,13 +20,16 @@ class DBScan(object):
         self.image = image
         self.plot_clusters = plot_clusters
         self.new_boxes = self.run_dbscan()
+        self.plot_image = plot_image
         if plot_image:
             self.plotted_image = self.plot_bounding_boxes()
         
     def plot_bounding_boxes(self):
         new_image = self.image.copy()
-        new_color = (255,0,255)
+        new_color = (0,255,255)
         thickness = 3
+        text_thickness = 2
+        text_size = .5
         for key in self.new_boxes.keys():
             if self.new_boxes[key] != []:
                 for j in range(len(self.new_boxes[key])):
@@ -35,6 +38,7 @@ class DBScan(object):
                     right = int(self.new_boxes[key][j][2])
                     bottom = int(self.new_boxes[key][j][3])
                     new_image = cv2.rectangle(new_image, (left,top), (right,bottom),new_color, thickness)
+                    new_image =cv2.putText(new_image, key + " " + str(j), (left-10,top-10), cv2.FONT_HERSHEY_SIMPLEX, text_size, new_color, text_thickness)
         return new_image
 
     def get_clusters(self, boxes):
@@ -98,6 +102,18 @@ class DBScan(object):
                 key : box_list
             })
         return new_box_dict
+    
+    def get_all_images(self):
+        keys = []
+        images = []
+        if self.plot_image:
+            keys.append('Iou')
+            plotted = self.plotted_image
+            images.append(plotted)
+        keys.append('Original')
+        original = self.image
+        images.append(original)
+        return  images, keys
         
 
 

@@ -1,0 +1,117 @@
+2022-12-22 09:51:02,649 INFO    MainThread:84567 [wandb_setup.py:_flush():75] Loading settings from /Users/stephennelson/.config/wandb/settings
+2022-12-22 09:51:02,649 INFO    MainThread:84567 [wandb_setup.py:_flush():75] Loading settings from /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/settings
+2022-12-22 09:51:02,650 INFO    MainThread:84567 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2022-12-22 09:51:02,650 INFO    MainThread:84567 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'train/train_frustum_neonet.py', 'program': 'train_frustum_neonet.py'}
+2022-12-22 09:51:02,650 INFO    MainThread:84567 [wandb_init.py:_log_setup():438] Logging user logs to /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221222_095102-3oud6kld/logs/debug.log
+2022-12-22 09:51:02,650 INFO    MainThread:84567 [wandb_init.py:_log_setup():439] Logging internal logs to /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221222_095102-3oud6kld/logs/debug-internal.log
+2022-12-22 09:51:02,650 INFO    MainThread:84567 [wandb_init.py:init():472] calling init triggers
+2022-12-22 09:51:02,650 INFO    MainThread:84567 [wandb_init.py:init():475] wandb.init called with sweep_config: {}
+config: {}
+2022-12-22 09:51:02,651 INFO    MainThread:84567 [wandb_init.py:init():525] starting backend
+2022-12-22 09:51:02,651 INFO    MainThread:84567 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2022-12-22 09:51:02,671 INFO    MainThread:84567 [backend.py:ensure_launched():219] starting backend process...
+2022-12-22 09:51:02,685 INFO    MainThread:84567 [backend.py:ensure_launched():224] started backend process with pid: 84611
+2022-12-22 09:51:02,687 INFO    MainThread:84567 [wandb_init.py:init():534] backend started and connected
+2022-12-22 09:51:02,697 INFO    MainThread:84567 [wandb_init.py:init():598] updated telemetry
+2022-12-22 09:51:02,736 INFO    MainThread:84567 [wandb_init.py:init():629] communicating run to backend with 30 second timeout
+2022-12-22 09:51:03,908 INFO    MainThread:84567 [wandb_run.py:_on_init():1922] communicating current version
+2022-12-22 09:51:04,048 INFO    MainThread:84567 [wandb_run.py:_on_init():1926] got version response upgrade_message: "wandb version 0.13.7 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2022-12-22 09:51:04,048 INFO    MainThread:84567 [wandb_init.py:init():660] starting run threads in backend
+2022-12-22 09:51:05,320 INFO    MainThread:84567 [wandb_run.py:_console_start():1896] atexit reg
+2022-12-22 09:51:05,321 INFO    MainThread:84567 [wandb_run.py:_redirect():1769] redirect: SettingsConsole.REDIRECT
+2022-12-22 09:51:05,321 INFO    MainThread:84567 [wandb_run.py:_redirect():1774] Redirecting console.
+2022-12-22 09:51:05,322 INFO    MainThread:84567 [wandb_run.py:_redirect():1830] Redirects installed.
+2022-12-22 09:51:05,322 INFO    MainThread:84567 [wandb_init.py:init():685] run started, returning control to user process
+2022-12-22 09:51:05,323 INFO    MainThread:84567 [wandb_run.py:_config_callback():1129] config_cb None None {}
+2022-12-22 09:51:05,327 INFO    MainThread:84567 [wandb_run.py:_config_callback():1129] config_cb None None {'dataset_id': 'Kitti', 'resume': False, 'metadata': {'wandb_entity': 'prj-research', 'wandb_project': 'Learning-Frustum-Proposals', 'wandb_group': 'Debugging', 'run_name': None, 'viz': True}, 'model': {'cfg': '/Users/stephennelson/Projects/Learning-Frustum-Proposals/models/cfgs/learned_frustums.yaml', 'weights': None}, 'dataset': {'dir': 'Kitti', 'use_normals': False, 'drop_last': False, 'cache': False, 'notest': False, 'num_workers': 8, 'shuffle': True, 'sample_points': None}, 'optimization': {'resume': False, 'epochs': 5, 'learning_rate': 0.001, 'optimizer': 'adam', 'batch_size': 4, 'test_batch_size': 4, 'dropout': 0.0, 'cuda': False, 'weight_decay': 0.1}, 'data_augmentation': {'mirror_x': {'apply': True, 'probability': 0.2}, 'add_noise': {'apply': True, 'samples': 0.1, 'mean': 0, 'std': 0.02}, 'resize': {'apply': True, 'samples': 0.2, 'mean': 0, 'std': 0.05}}, 'meta': {'dropout': 0.0}, 'point_features': {'type': 'learned_frustums', 'max_points': 1024, 'epsilon': 0.05, 'augmented': True, 'seg_filter': False, 'distance': True, 'mean_shift': True}, 'point_encoder': {'type': 'pointnet', 'num_input_channels': 8, 'feature_size': 512, 'layer_dims': [8, 64, 128, 256, 512], 'backbone': 'pointnet'}, 'head': {'type': 'regressor', 'fc_layers': [512, 256, 64, 64, 64]}, 'n_params': 595777, 'fc_layer_depth': 5, 'fc_layer_max_dim': 512, 'point_encoder_depth': 5, 'point_encoder_max_dim': 512}
+2022-12-22 09:51:05,337 INFO    MainThread:84567 [wandb_run.py:_atexit_cleanup():1865] got exitcode: 1
+2022-12-22 09:51:05,338 INFO    MainThread:84567 [wandb_run.py:_restore():1837] restore
+2022-12-22 09:51:07,862 INFO    MainThread:84567 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 772
+  total_bytes: 772
+}
+
+2022-12-22 09:51:08,091 INFO    MainThread:84567 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 772
+  total_bytes: 772
+}
+
+2022-12-22 09:51:08,947 INFO    MainThread:84567 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 772
+  total_bytes: 6100
+}
+
+2022-12-22 09:51:09,053 INFO    MainThread:84567 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 772
+  total_bytes: 9071
+}
+
+2022-12-22 09:51:09,156 INFO    MainThread:84567 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 9071
+  total_bytes: 9071
+}
+
+2022-12-22 09:51:09,263 INFO    MainThread:84567 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 9071
+  total_bytes: 9071
+}
+
+2022-12-22 09:51:09,369 INFO    MainThread:84567 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 9071
+  total_bytes: 9071
+}
+
+2022-12-22 09:51:09,488 INFO    MainThread:84567 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 9071
+  total_bytes: 9071
+}
+
+2022-12-22 09:51:09,595 INFO    MainThread:84567 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 9071
+  total_bytes: 9071
+}
+
+2022-12-22 09:51:09,982 INFO    MainThread:84567 [wandb_run.py:_on_finish():1995] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 9071
+  total_bytes: 9071
+}
+local_info {
+}
+
+2022-12-22 09:51:11,090 INFO    MainThread:84567 [wandb_run.py:_footer_history_summary_info():3087] rendering history
+2022-12-22 09:51:11,090 INFO    MainThread:84567 [wandb_run.py:_footer_history_summary_info():3116] rendering summary
+2022-12-22 09:51:11,091 INFO    MainThread:84567 [wandb_run.py:_footer_sync_info():3044] logging synced files

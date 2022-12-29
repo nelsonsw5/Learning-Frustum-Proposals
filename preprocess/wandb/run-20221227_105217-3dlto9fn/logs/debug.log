@@ -1,0 +1,26 @@
+2022-12-27 10:52:17,770 INFO    MainThread:9396 [wandb_setup.py:_flush():75] Loading settings from /Users/stephennelson/.config/wandb/settings
+2022-12-27 10:52:17,770 INFO    MainThread:9396 [wandb_setup.py:_flush():75] Loading settings from /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/settings
+2022-12-27 10:52:17,770 INFO    MainThread:9396 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2022-12-27 10:52:17,770 INFO    MainThread:9396 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'preprocess/build_frustum_dataset.py', 'program': 'build_frustum_dataset.py'}
+2022-12-27 10:52:17,771 INFO    MainThread:9396 [wandb_init.py:_log_setup():438] Logging user logs to /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221227_105217-3dlto9fn/logs/debug.log
+2022-12-27 10:52:17,771 INFO    MainThread:9396 [wandb_init.py:_log_setup():439] Logging internal logs to /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221227_105217-3dlto9fn/logs/debug-internal.log
+2022-12-27 10:52:17,771 INFO    MainThread:9396 [wandb_init.py:init():472] calling init triggers
+2022-12-27 10:52:17,772 INFO    MainThread:9396 [wandb_init.py:init():475] wandb.init called with sweep_config: {}
+config: {}
+2022-12-27 10:52:17,772 INFO    MainThread:9396 [wandb_init.py:init():525] starting backend
+2022-12-27 10:52:17,772 INFO    MainThread:9396 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2022-12-27 10:52:17,794 INFO    MainThread:9396 [backend.py:ensure_launched():219] starting backend process...
+2022-12-27 10:52:17,806 INFO    MainThread:9396 [backend.py:ensure_launched():224] started backend process with pid: 9416
+2022-12-27 10:52:17,808 INFO    MainThread:9396 [wandb_init.py:init():534] backend started and connected
+2022-12-27 10:52:17,823 INFO    MainThread:9396 [wandb_init.py:init():598] updated telemetry
+2022-12-27 10:52:17,860 INFO    MainThread:9396 [wandb_init.py:init():629] communicating run to backend with 30 second timeout
+2022-12-27 10:52:19,128 INFO    MainThread:9396 [wandb_run.py:_on_init():1922] communicating current version
+2022-12-27 10:52:19,273 INFO    MainThread:9396 [wandb_run.py:_on_init():1926] got version response upgrade_message: "wandb version 0.13.7 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2022-12-27 10:52:19,274 INFO    MainThread:9396 [wandb_init.py:init():660] starting run threads in backend
+2022-12-27 10:52:20,788 INFO    MainThread:9396 [wandb_run.py:_console_start():1896] atexit reg
+2022-12-27 10:52:20,789 INFO    MainThread:9396 [wandb_run.py:_redirect():1769] redirect: SettingsConsole.REDIRECT
+2022-12-27 10:52:20,789 INFO    MainThread:9396 [wandb_run.py:_redirect():1774] Redirecting console.
+2022-12-27 10:52:20,790 INFO    MainThread:9396 [wandb_run.py:_redirect():1830] Redirects installed.
+2022-12-27 10:52:20,790 INFO    MainThread:9396 [wandb_init.py:init():685] run started, returning control to user process
+2022-12-27 10:52:20,790 INFO    MainThread:9396 [wandb_run.py:_config_callback():1129] config_cb None None {}

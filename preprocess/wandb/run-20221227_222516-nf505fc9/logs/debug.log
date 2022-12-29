@@ -1,0 +1,99 @@
+2022-12-27 22:25:16,965 INFO    MainThread:23450 [wandb_setup.py:_flush():75] Loading settings from /Users/stephennelson/.config/wandb/settings
+2022-12-27 22:25:16,965 INFO    MainThread:23450 [wandb_setup.py:_flush():75] Loading settings from /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/settings
+2022-12-27 22:25:16,965 INFO    MainThread:23450 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2022-12-27 22:25:16,965 INFO    MainThread:23450 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'preprocess/build_frustum_dataset.py', 'program': 'build_frustum_dataset.py'}
+2022-12-27 22:25:16,965 INFO    MainThread:23450 [wandb_init.py:_log_setup():438] Logging user logs to /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221227_222516-nf505fc9/logs/debug.log
+2022-12-27 22:25:16,965 INFO    MainThread:23450 [wandb_init.py:_log_setup():439] Logging internal logs to /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221227_222516-nf505fc9/logs/debug-internal.log
+2022-12-27 22:25:16,966 INFO    MainThread:23450 [wandb_init.py:init():472] calling init triggers
+2022-12-27 22:25:16,966 INFO    MainThread:23450 [wandb_init.py:init():475] wandb.init called with sweep_config: {}
+config: {}
+2022-12-27 22:25:16,966 INFO    MainThread:23450 [wandb_init.py:init():525] starting backend
+2022-12-27 22:25:16,966 INFO    MainThread:23450 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2022-12-27 22:25:16,998 INFO    MainThread:23450 [backend.py:ensure_launched():219] starting backend process...
+2022-12-27 22:25:17,011 INFO    MainThread:23450 [backend.py:ensure_launched():224] started backend process with pid: 23465
+2022-12-27 22:25:17,013 INFO    MainThread:23450 [wandb_init.py:init():534] backend started and connected
+2022-12-27 22:25:17,021 INFO    MainThread:23450 [wandb_init.py:init():598] updated telemetry
+2022-12-27 22:25:17,056 INFO    MainThread:23450 [wandb_init.py:init():629] communicating run to backend with 30 second timeout
+2022-12-27 22:25:17,661 ERROR   Thread-1  :23450 [retry.py:__call__():126] Retry attempt failed:
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/urllib3/connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/urllib3/util/ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 54] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/urllib3/connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/urllib3/util/ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 102, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 141, in execute
+    return self.client.execute(*args, **kwargs)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/requests/api.py", line 117, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/requests/adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2022-12-27 22:25:47,062 INFO    MainThread:23450 [interface_shared.py:_communicate_run():325] couldn't get run from backend
+2022-12-27 22:25:47,063 ERROR   MainThread:23450 [wandb_init.py:init():634] backend process timed out
+2022-12-27 22:25:47,064 ERROR   MainThread:23450 [wandb_init.py:init():645] encountered error: Error communicating with wandb process
+try: wandb.init(settings=wandb.Settings(start_method='fork'))
+or:  wandb.init(settings=wandb.Settings(start_method='thread'))
+For more info see: https://docs.wandb.ai/library/init#init-start-error

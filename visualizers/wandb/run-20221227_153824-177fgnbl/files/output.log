@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "plot_gt_kitti.py", line 79, in <module>
+    main(args)
+  File "plot_gt_kitti.py", line 63, in main
+    gt_dims = swap(torch.tensor(gt_dims))
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/transforms.py", line 230, in __call__
+    x, y, z = verts.unbind(-1)
+ValueError: not enough values to unpack (expected 3, got 1)

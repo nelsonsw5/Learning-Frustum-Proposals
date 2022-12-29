@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "build_frustum_dataset.py", line 120, in <module>
+    main(args)
+  File "build_frustum_dataset.py", line 99, in main
+    create_frustum_data(dataset,New_Directory, args.frustum_method, args.viz)
+  File "build_frustum_dataset.py", line 65, in create_frustum_data
+    cloud = point_swap(torch.tensor(pc[0:3]))
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/transforms.py", line 230, in __call__
+    x, y, z = verts.unbind(-1)
+ValueError: too many values to unpack (expected 3)

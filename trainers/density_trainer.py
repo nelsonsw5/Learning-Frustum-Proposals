@@ -1,6 +1,7 @@
 import torch
 import torch.nn.functional as F
 from trainers.base_trainer import BaseTrainer
+import pdb
 
 from eval.metrics import get_mse, get_mape, get_mae, get_acc
 
@@ -58,7 +59,7 @@ class DensityTrainer(BaseTrainer):
         return y_hat
 
     def _wandb_config(self, chkp_dir, resume=False):
-
+        pdb.set_trace()
         config = {
             "dataset_id": self.train_dataloader.dataset.dataset_id,
             "resume": resume

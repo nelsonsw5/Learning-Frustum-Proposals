@@ -1,0 +1,22 @@
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/learned_frustum_trainer.py(64)_wandb_config()
+-> "dataset_id": self.train_dataloader.dataset.dataset_id,
+(Pdb) self.train_dataloader.dataset.dataset_id
+''
+(Pdb) self.data_path.split("/")[-1]
+*** AttributeError: 'RegressionTrainer' object has no attribute 'data_path'
+
+
+
+(Pdb) self.train_dataloader.dataset
+<datasets.kitti.kitti_dataset.KittiDataset object at 0x7fa3f0075040>
+
+
+(Pdb) self.train_dataloader.dataset.dataset_id
+''
+(Pdb) data_path.split("/")[-1]
+*** NameError: name 'data_path' is not defined
+
+(Pdb) data_path
+*** NameError: name 'data_path' is not defined
+(Pdb) self.data_path
+*** AttributeError: 'RegressionTrainer' object has no attribute 'data_path'

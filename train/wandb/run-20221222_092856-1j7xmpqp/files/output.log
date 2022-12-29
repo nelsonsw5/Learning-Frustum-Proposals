@@ -1,0 +1,9 @@
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/learned_frustum_trainer.py(64)_wandb_config()
+-> "dataset_id": self.train_dataloader.dataset.dataset_id,
+
+
+
+(Pdb) self.train_dataloader
+<torch.utils.data.dataloader.DataLoader object at 0x7f7d012b3910>
+(Pdb) self.train_dataloader.dataset
+<datasets.kitti.kitti_dataset.KittiDataset object at 0x7f7d00075040>

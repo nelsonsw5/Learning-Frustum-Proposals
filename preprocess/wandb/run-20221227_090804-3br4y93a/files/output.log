@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "build_frustum_dataset.py", line 106, in <module>
+    main(args)
+  File "build_frustum_dataset.py", line 85, in main
+    create_frustum_data(dataset,New_Directory, args.frustum_method, args.viz)
+  File "build_frustum_dataset.py", line 59, in create_frustum_data
+    dict_list.append(run.get_point_cloud_log(scene_cloud, boxes=None, key=str(frustum_labels[pc])))
+UnboundLocalError: local variable 'pc' referenced before assignment

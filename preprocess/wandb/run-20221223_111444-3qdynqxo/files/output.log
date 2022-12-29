@@ -1,0 +1,2 @@
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/build_frustum_dataset.py(56)create_frustum_data()
+-> dict_list.append(run.get_point_cloud_log(frustum, boxes=None, key=str('pc-'+ str(pc))))

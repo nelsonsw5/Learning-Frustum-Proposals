@@ -247,8 +247,8 @@ class WandB:
         if isinstance(dims, torch.Tensor):
             dims = dims.data.numpy()
         boxes = []
-
         for i, c in enumerate(centroids):
+            # pdb.set_trace()
             bb = ThreeDimBoundBox(
                 centroids=c,
                 dims=dims[i, :]
@@ -268,7 +268,6 @@ class WandB:
                 }
             if labels:
                 box_dict["label"] = labels[i]
-            # pdb.set_trace()
             boxes.append(box_dict)
 
         return np.array(boxes)

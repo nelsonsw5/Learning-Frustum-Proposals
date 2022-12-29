@@ -1,0 +1,2 @@
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/build_frustum_dataset.py(72)create_frustum_data()
+-> boxes = run.get_bb_dict(centroids=label_swap(scene_boxes_centroids),dims=label_swap(scene_boxes_dims))

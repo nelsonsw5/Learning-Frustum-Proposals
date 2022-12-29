@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "build_frustum_dataset.py", line 108, in <module>
+    main(args)
+  File "build_frustum_dataset.py", line 87, in main
+    create_frustum_data(dataset,New_Directory, args.frustum_method, args.viz)
+  File "build_frustum_dataset.py", line 60, in create_frustum_data
+    boxes=run.get_bb_dict(centroids=swap(scene_boxes_centroids),dims=swap(scene_boxes_dims))
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/transforms.py", line 230, in __call__
+    x, y, z = verts.unbind(-1)
+AttributeError: 'numpy.ndarray' object has no attribute 'unbind'

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "plot_gt_kitti.py", line 71, in <module>
+    main(args)
+  File "plot_gt_kitti.py", line 54, in main
+    gt_centroids = swap(gt_centroids)
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/transforms.py", line 230, in __call__
+    x, y, z = verts.unbind(-1)
+AttributeError: 'list' object has no attribute 'unbind'

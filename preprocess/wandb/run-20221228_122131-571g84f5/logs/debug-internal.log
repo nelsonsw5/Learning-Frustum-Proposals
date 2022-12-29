@@ -1,0 +1,268 @@
+2022-12-28 12:21:32,600 INFO    MainThread:26648 [internal.py:wandb_internal():92] W&B internal server running at pid: 26648, started at: 2022-12-28 12:21:32.599766
+2022-12-28 12:21:32,601 INFO    WriterThread:26648 [datastore.py:open_for_write():77] open: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/run-571g84f5.wandb
+2022-12-28 12:21:32,602 DEBUG   SenderThread:26648 [sender.py:send():235] send: header
+2022-12-28 12:21:32,602 DEBUG   SenderThread:26648 [sender.py:send():235] send: run
+2022-12-28 12:21:32,782 INFO    SenderThread:26648 [dir_watcher.py:__init__():169] watching files in: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files
+2022-12-28 12:21:32,782 INFO    SenderThread:26648 [sender.py:_start_run_threads():812] run started: 571g84f5 with start time 1672255291
+2022-12-28 12:21:32,782 DEBUG   SenderThread:26648 [sender.py:send():235] send: summary
+2022-12-28 12:21:32,782 INFO    SenderThread:26648 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-12-28 12:21:32,784 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: check_version
+2022-12-28 12:21:32,784 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: check_version
+2022-12-28 12:21:32,948 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: run_start
+2022-12-28 12:21:32,950 DEBUG   HandlerThread:26648 [meta.py:__init__():37] meta init
+2022-12-28 12:21:32,950 DEBUG   HandlerThread:26648 [meta.py:__init__():51] meta init done
+2022-12-28 12:21:32,950 DEBUG   HandlerThread:26648 [meta.py:probe():211] probe
+2022-12-28 12:21:32,951 DEBUG   HandlerThread:26648 [meta.py:_setup_git():201] setup git
+2022-12-28 12:21:33,009 DEBUG   HandlerThread:26648 [meta.py:_setup_git():208] setup git done
+2022-12-28 12:21:33,010 DEBUG   HandlerThread:26648 [meta.py:_save_pip():55] save pip
+2022-12-28 12:21:33,010 DEBUG   HandlerThread:26648 [meta.py:_save_pip():69] save pip done
+2022-12-28 12:21:33,010 DEBUG   HandlerThread:26648 [meta.py:_save_conda():76] save conda
+2022-12-28 12:21:33,784 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/conda-environment.yaml
+2022-12-28 12:21:33,785 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/requirements.txt
+2022-12-28 12:21:33,785 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/wandb-summary.json
+2022-12-28 12:21:34,127 DEBUG   HandlerThread:26648 [meta.py:_save_conda():86] save conda done
+2022-12-28 12:21:34,127 DEBUG   HandlerThread:26648 [meta.py:probe():249] probe done
+2022-12-28 12:21:34,131 DEBUG   SenderThread:26648 [sender.py:send():235] send: files
+2022-12-28 12:21:34,131 INFO    SenderThread:26648 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2022-12-28 12:21:34,134 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-28 12:21:34,135 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: stop_status
+2022-12-28 12:21:34,260 DEBUG   SenderThread:26648 [sender.py:send():235] send: telemetry
+2022-12-28 12:21:34,260 DEBUG   SenderThread:26648 [sender.py:send():235] send: config
+2022-12-28 12:21:34,428 DEBUG   SenderThread:26648 [sender.py:send():235] send: files
+2022-12-28 12:21:34,428 INFO    SenderThread:26648 [sender.py:_save_file():947] saving file media/object3D/Car 0_0_6f36735923815dd1a458.pts.json with policy now
+2022-12-28 12:21:34,429 DEBUG   SenderThread:26648 [sender.py:send():235] send: files
+2022-12-28 12:21:34,429 INFO    SenderThread:26648 [sender.py:_save_file():947] saving file media/object3D/Car 1_0_9b3c6f8addeeb23019b4.pts.json with policy now
+2022-12-28 12:21:34,429 DEBUG   SenderThread:26648 [sender.py:send():235] send: files
+2022-12-28 12:21:34,429 INFO    SenderThread:26648 [sender.py:_save_file():947] saving file media/object3D/Car 2_0_408ad58ced545eadb597.pts.json with policy now
+2022-12-28 12:21:34,430 DEBUG   SenderThread:26648 [sender.py:send():235] send: files
+2022-12-28 12:21:34,430 INFO    SenderThread:26648 [sender.py:_save_file():947] saving file media/object3D/Car 3_0_b792696d792d6da80409.pts.json with policy now
+2022-12-28 12:21:34,430 DEBUG   SenderThread:26648 [sender.py:send():235] send: files
+2022-12-28 12:21:34,430 INFO    SenderThread:26648 [sender.py:_save_file():947] saving file media/object3D/Car 4_0_a513d6551ef3947e5957.pts.json with policy now
+2022-12-28 12:21:34,430 DEBUG   SenderThread:26648 [sender.py:send():235] send: files
+2022-12-28 12:21:34,430 INFO    SenderThread:26648 [sender.py:_save_file():947] saving file media/object3D/Pedestrian 0_0_fd3c307a99c41bb068db.pts.json with policy now
+2022-12-28 12:21:34,432 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: partial_history
+2022-12-28 12:21:34,433 DEBUG   SenderThread:26648 [sender.py:send():235] send: files
+2022-12-28 12:21:34,433 INFO    SenderThread:26648 [sender.py:_save_file():947] saving file media/object3D/Pedestrian 1_0_e09c0616b26cae1253d8.pts.json with policy now
+2022-12-28 12:21:34,434 DEBUG   SenderThread:26648 [sender.py:send():235] send: files
+2022-12-28 12:21:34,434 INFO    SenderThread:26648 [sender.py:_save_file():947] saving file media/object3D/Cyclist 0_0_bd535b412f4b32b444c1.pts.json with policy now
+2022-12-28 12:21:34,436 DEBUG   SenderThread:26648 [sender.py:send():235] send: files
+2022-12-28 12:21:34,436 INFO    SenderThread:26648 [sender.py:_save_file():947] saving file media/images/dbscan_0_ac2ac15912558ff9842b.png with policy now
+2022-12-28 12:21:34,436 DEBUG   SenderThread:26648 [sender.py:send():235] send: files
+2022-12-28 12:21:34,437 INFO    SenderThread:26648 [sender.py:_save_file():947] saving file media/images/Original_0_f4bf081cb5abce7c6c1f.png with policy now
+2022-12-28 12:21:34,438 DEBUG   SenderThread:26648 [sender.py:send():235] send: history
+2022-12-28 12:21:34,438 DEBUG   SenderThread:26648 [sender.py:send():235] send: summary
+2022-12-28 12:21:34,439 INFO    SenderThread:26648 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-12-28 12:21:34,439 DEBUG   SenderThread:26648 [sender.py:send():235] send: telemetry
+2022-12-28 12:21:34,670 INFO    Thread-11 :26648 [upload_job.py:push():137] Uploaded file /var/folders/bj/xb0vw9_96cx1kj56y4l_zzww0000gn/T/tmpij9b81qnwandb/1hwmxr7j-wandb-metadata.json
+2022-12-28 12:21:34,789 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/conda-environment.yaml
+2022-12-28 12:21:34,789 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/wandb-summary.json
+2022-12-28 12:21:34,789 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/object3D/Pedestrian 0_0_fd3c307a99c41bb068db.pts.json
+2022-12-28 12:21:34,789 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/wandb-metadata.json
+2022-12-28 12:21:34,789 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/object3D/Car 2_0_408ad58ced545eadb597.pts.json
+2022-12-28 12:21:34,789 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/object3D/Cyclist 0_0_bd535b412f4b32b444c1.pts.json
+2022-12-28 12:21:34,789 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/object3D/Car 1_0_9b3c6f8addeeb23019b4.pts.json
+2022-12-28 12:21:34,789 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/images/Original_0_f4bf081cb5abce7c6c1f.png
+2022-12-28 12:21:34,790 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/output.log
+2022-12-28 12:21:34,790 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/object3D/Car 3_0_b792696d792d6da80409.pts.json
+2022-12-28 12:21:34,790 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/object3D/Pedestrian 1_0_e09c0616b26cae1253d8.pts.json
+2022-12-28 12:21:34,790 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/images/dbscan_0_ac2ac15912558ff9842b.png
+2022-12-28 12:21:34,790 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/object3D/Car 0_0_6f36735923815dd1a458.pts.json
+2022-12-28 12:21:34,790 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/object3D/Car 4_0_a513d6551ef3947e5957.pts.json
+2022-12-28 12:21:34,790 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media
+2022-12-28 12:21:34,790 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/object3D
+2022-12-28 12:21:34,790 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/images
+2022-12-28 12:21:35,098 INFO    Thread-18 :26648 [upload_job.py:push():137] Uploaded file /var/folders/bj/xb0vw9_96cx1kj56y4l_zzww0000gn/T/tmpij9b81qnwandb/y1yucjx3-media/object3D/Pedestrian 1_0_e09c0616b26cae1253d8.pts.json
+2022-12-28 12:21:36,009 INFO    Thread-13 :26648 [upload_job.py:push():137] Uploaded file /var/folders/bj/xb0vw9_96cx1kj56y4l_zzww0000gn/T/tmpij9b81qnwandb/1tqq4cas-media/object3D/Car 1_0_9b3c6f8addeeb23019b4.pts.json
+2022-12-28 12:21:36,663 DEBUG   SenderThread:26648 [sender.py:send():235] send: exit
+2022-12-28 12:21:36,663 INFO    SenderThread:26648 [sender.py:send_exit():371] handling exit code: 0
+2022-12-28 12:21:36,663 INFO    SenderThread:26648 [sender.py:send_exit():373] handling runtime: 3
+2022-12-28 12:21:36,664 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:36,664 INFO    SenderThread:26648 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-12-28 12:21:36,665 INFO    SenderThread:26648 [sender.py:send_exit():379] send defer
+2022-12-28 12:21:36,665 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:36,665 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: defer
+2022-12-28 12:21:36,666 INFO    HandlerThread:26648 [handler.py:handle_request_defer():164] handle defer: 0
+2022-12-28 12:21:36,666 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: defer
+2022-12-28 12:21:36,666 INFO    SenderThread:26648 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-12-28 12:21:36,666 INFO    SenderThread:26648 [sender.py:transition_state():392] send defer: 1
+2022-12-28 12:21:36,667 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: defer
+2022-12-28 12:21:36,667 INFO    HandlerThread:26648 [handler.py:handle_request_defer():164] handle defer: 1
+2022-12-28 12:21:36,778 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:36,778 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: defer
+2022-12-28 12:21:36,779 INFO    SenderThread:26648 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-12-28 12:21:36,779 INFO    SenderThread:26648 [sender.py:transition_state():392] send defer: 2
+2022-12-28 12:21:36,779 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:36,779 DEBUG   SenderThread:26648 [sender.py:send():235] send: stats
+2022-12-28 12:21:36,780 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: defer
+2022-12-28 12:21:36,780 INFO    HandlerThread:26648 [handler.py:handle_request_defer():164] handle defer: 2
+2022-12-28 12:21:36,781 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: defer
+2022-12-28 12:21:36,781 INFO    SenderThread:26648 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-12-28 12:21:36,781 INFO    SenderThread:26648 [sender.py:transition_state():392] send defer: 3
+2022-12-28 12:21:36,781 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: defer
+2022-12-28 12:21:36,781 INFO    HandlerThread:26648 [handler.py:handle_request_defer():164] handle defer: 3
+2022-12-28 12:21:36,782 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: defer
+2022-12-28 12:21:36,782 INFO    SenderThread:26648 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-12-28 12:21:36,782 INFO    SenderThread:26648 [sender.py:transition_state():392] send defer: 4
+2022-12-28 12:21:36,782 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: defer
+2022-12-28 12:21:36,782 INFO    HandlerThread:26648 [handler.py:handle_request_defer():164] handle defer: 4
+2022-12-28 12:21:36,783 DEBUG   SenderThread:26648 [sender.py:send():235] send: summary
+2022-12-28 12:21:36,784 INFO    SenderThread:26648 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-12-28 12:21:36,784 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: defer
+2022-12-28 12:21:36,784 INFO    SenderThread:26648 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-12-28 12:21:36,784 INFO    SenderThread:26648 [sender.py:transition_state():392] send defer: 5
+2022-12-28 12:21:36,784 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: defer
+2022-12-28 12:21:36,784 INFO    HandlerThread:26648 [handler.py:handle_request_defer():164] handle defer: 5
+2022-12-28 12:21:36,785 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: defer
+2022-12-28 12:21:36,785 INFO    SenderThread:26648 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-12-28 12:21:36,794 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/wandb-summary.json
+2022-12-28 12:21:36,860 INFO    Thread-14 :26648 [upload_job.py:push():137] Uploaded file /var/folders/bj/xb0vw9_96cx1kj56y4l_zzww0000gn/T/tmpij9b81qnwandb/2kme2tl6-media/object3D/Car 2_0_408ad58ced545eadb597.pts.json
+2022-12-28 12:21:36,882 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:36,993 INFO    Thread-12 :26648 [upload_job.py:push():137] Uploaded file /var/folders/bj/xb0vw9_96cx1kj56y4l_zzww0000gn/T/tmpij9b81qnwandb/1tivt5vp-media/object3D/Car 0_0_6f36735923815dd1a458.pts.json
+2022-12-28 12:21:37,013 INFO    Thread-19 :26648 [upload_job.py:push():137] Uploaded file /var/folders/bj/xb0vw9_96cx1kj56y4l_zzww0000gn/T/tmpij9b81qnwandb/jvuvimgr-media/object3D/Cyclist 0_0_bd535b412f4b32b444c1.pts.json
+2022-12-28 12:21:37,194 INFO    SenderThread:26648 [sender.py:transition_state():392] send defer: 6
+2022-12-28 12:21:37,194 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:37,194 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: defer
+2022-12-28 12:21:37,194 INFO    HandlerThread:26648 [handler.py:handle_request_defer():164] handle defer: 6
+2022-12-28 12:21:37,194 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: defer
+2022-12-28 12:21:37,194 INFO    SenderThread:26648 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-12-28 12:21:37,194 INFO    SenderThread:26648 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-12-28 12:21:37,300 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:37,433 INFO    Thread-16 :26648 [upload_job.py:push():137] Uploaded file /var/folders/bj/xb0vw9_96cx1kj56y4l_zzww0000gn/T/tmpij9b81qnwandb/37ygy1qj-media/object3D/Car 4_0_a513d6551ef3947e5957.pts.json
+2022-12-28 12:21:37,662 INFO    Thread-15 :26648 [upload_job.py:push():137] Uploaded file /var/folders/bj/xb0vw9_96cx1kj56y4l_zzww0000gn/T/tmpij9b81qnwandb/3oj80dha-media/object3D/Car 3_0_b792696d792d6da80409.pts.json
+2022-12-28 12:21:37,797 INFO    Thread-7  :26648 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/config.yaml
+2022-12-28 12:21:37,799 INFO    SenderThread:26648 [dir_watcher.py:finish():313] scan: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files
+2022-12-28 12:21:37,800 INFO    SenderThread:26648 [dir_watcher.py:finish():327] scan save: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/requirements.txt requirements.txt
+2022-12-28 12:21:37,800 INFO    SenderThread:26648 [dir_watcher.py:finish():327] scan save: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/output.log output.log
+2022-12-28 12:21:37,804 INFO    SenderThread:26648 [dir_watcher.py:finish():327] scan save: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/config.yaml config.yaml
+2022-12-28 12:21:37,804 INFO    SenderThread:26648 [dir_watcher.py:finish():327] scan save: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/wandb-summary.json wandb-summary.json
+2022-12-28 12:21:37,808 INFO    SenderThread:26648 [dir_watcher.py:finish():327] scan save: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/conda-environment.yaml conda-environment.yaml
+2022-12-28 12:21:37,809 INFO    SenderThread:26648 [dir_watcher.py:finish():327] scan save: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/wandb-metadata.json wandb-metadata.json
+2022-12-28 12:21:37,816 INFO    SenderThread:26648 [dir_watcher.py:finish():327] scan save: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/images/Original_0_f4bf081cb5abce7c6c1f.png media/images/Original_0_f4bf081cb5abce7c6c1f.png
+2022-12-28 12:21:37,817 INFO    SenderThread:26648 [dir_watcher.py:finish():327] scan save: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/images/dbscan_0_ac2ac15912558ff9842b.png media/images/dbscan_0_ac2ac15912558ff9842b.png
+2022-12-28 12:21:37,817 INFO    SenderThread:26648 [dir_watcher.py:finish():327] scan save: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/object3D/Car 1_0_9b3c6f8addeeb23019b4.pts.json media/object3D/Car 1_0_9b3c6f8addeeb23019b4.pts.json
+2022-12-28 12:21:37,817 INFO    SenderThread:26648 [dir_watcher.py:finish():327] scan save: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/object3D/Pedestrian 1_0_e09c0616b26cae1253d8.pts.json media/object3D/Pedestrian 1_0_e09c0616b26cae1253d8.pts.json
+2022-12-28 12:21:37,817 INFO    SenderThread:26648 [dir_watcher.py:finish():327] scan save: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/object3D/Pedestrian 0_0_fd3c307a99c41bb068db.pts.json media/object3D/Pedestrian 0_0_fd3c307a99c41bb068db.pts.json
+2022-12-28 12:21:37,817 INFO    SenderThread:26648 [dir_watcher.py:finish():327] scan save: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/object3D/Car 4_0_a513d6551ef3947e5957.pts.json media/object3D/Car 4_0_a513d6551ef3947e5957.pts.json
+2022-12-28 12:21:37,817 INFO    SenderThread:26648 [dir_watcher.py:finish():327] scan save: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/object3D/Car 0_0_6f36735923815dd1a458.pts.json media/object3D/Car 0_0_6f36735923815dd1a458.pts.json
+2022-12-28 12:21:37,817 INFO    SenderThread:26648 [dir_watcher.py:finish():327] scan save: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/object3D/Car 3_0_b792696d792d6da80409.pts.json media/object3D/Car 3_0_b792696d792d6da80409.pts.json
+2022-12-28 12:21:37,817 INFO    SenderThread:26648 [dir_watcher.py:finish():327] scan save: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/object3D/Cyclist 0_0_bd535b412f4b32b444c1.pts.json media/object3D/Cyclist 0_0_bd535b412f4b32b444c1.pts.json
+2022-12-28 12:21:37,817 INFO    SenderThread:26648 [dir_watcher.py:finish():327] scan save: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/media/object3D/Car 2_0_408ad58ced545eadb597.pts.json media/object3D/Car 2_0_408ad58ced545eadb597.pts.json
+2022-12-28 12:21:37,817 INFO    SenderThread:26648 [sender.py:transition_state():392] send defer: 7
+2022-12-28 12:21:37,818 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:37,818 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: defer
+2022-12-28 12:21:37,818 INFO    HandlerThread:26648 [handler.py:handle_request_defer():164] handle defer: 7
+2022-12-28 12:21:37,818 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: defer
+2022-12-28 12:21:37,818 INFO    SenderThread:26648 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-12-28 12:21:37,818 INFO    SenderThread:26648 [file_pusher.py:finish():145] shutting down file pusher
+2022-12-28 12:21:37,924 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:37,924 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:38,028 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:38,028 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:38,135 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:38,136 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:38,243 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:38,243 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:38,344 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:38,345 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:38,447 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:38,447 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:38,550 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:38,550 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:38,657 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:38,658 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:38,683 INFO    Thread-25 :26648 [upload_job.py:push():137] Uploaded file /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/conda-environment.yaml
+2022-12-28 12:21:38,699 INFO    Thread-24 :26648 [upload_job.py:push():137] Uploaded file /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/wandb-summary.json
+2022-12-28 12:21:38,741 INFO    Thread-22 :26648 [upload_job.py:push():137] Uploaded file /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/requirements.txt
+2022-12-28 12:21:38,760 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:38,760 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:38,866 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:38,867 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:38,973 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:38,973 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:39,048 INFO    Thread-23 :26648 [upload_job.py:push():137] Uploaded file /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/files/config.yaml
+2022-12-28 12:21:39,073 INFO    Thread-21 :26648 [upload_job.py:push():137] Uploaded file /var/folders/bj/xb0vw9_96cx1kj56y4l_zzww0000gn/T/tmpij9b81qnwandb/3prl2z4a-media/images/Original_0_f4bf081cb5abce7c6c1f.png
+2022-12-28 12:21:39,078 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:39,079 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:39,183 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:39,183 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:39,246 INFO    Thread-20 :26648 [upload_job.py:push():137] Uploaded file /var/folders/bj/xb0vw9_96cx1kj56y4l_zzww0000gn/T/tmpij9b81qnwandb/2el8sm3h-media/images/dbscan_0_ac2ac15912558ff9842b.png
+2022-12-28 12:21:39,287 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:39,288 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:39,398 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:39,398 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:39,504 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:39,504 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:39,606 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:39,607 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:39,714 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:39,714 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:39,821 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:39,822 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:39,932 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:39,935 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:40,041 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:40,042 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:40,150 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:40,150 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:40,259 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:40,260 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:40,367 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:40,367 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:40,474 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:40,475 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:40,578 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:40,578 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:40,685 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:40,686 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:40,789 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:40,790 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:40,898 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:40,899 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:41,003 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:41,004 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:41,109 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:41,109 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:41,216 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:41,216 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:41,324 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:41,326 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:41,434 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:41,437 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:41,542 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:41,542 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:41,639 INFO    Thread-17 :26648 [upload_job.py:push():137] Uploaded file /var/folders/bj/xb0vw9_96cx1kj56y4l_zzww0000gn/T/tmpij9b81qnwandb/26taptks-media/object3D/Pedestrian 0_0_fd3c307a99c41bb068db.pts.json
+2022-12-28 12:21:41,651 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:41,651 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:41,759 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:41,759 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:41,844 INFO    Thread-6  :26648 [sender.py:transition_state():392] send defer: 8
+2022-12-28 12:21:41,845 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: defer
+2022-12-28 12:21:41,845 INFO    HandlerThread:26648 [handler.py:handle_request_defer():164] handle defer: 8
+2022-12-28 12:21:41,846 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: defer
+2022-12-28 12:21:41,846 INFO    SenderThread:26648 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-12-28 12:21:41,863 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:41,939 INFO    SenderThread:26648 [sender.py:transition_state():392] send defer: 9
+2022-12-28 12:21:41,939 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:41,940 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: defer
+2022-12-28 12:21:41,940 INFO    HandlerThread:26648 [handler.py:handle_request_defer():164] handle defer: 9
+2022-12-28 12:21:41,941 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: defer
+2022-12-28 12:21:41,941 INFO    SenderThread:26648 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-12-28 12:21:41,942 INFO    SenderThread:26648 [sender.py:transition_state():392] send defer: 10
+2022-12-28 12:21:41,942 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: defer
+2022-12-28 12:21:41,942 INFO    HandlerThread:26648 [handler.py:handle_request_defer():164] handle defer: 10
+2022-12-28 12:21:41,943 DEBUG   SenderThread:26648 [sender.py:send():235] send: final
+2022-12-28 12:21:41,943 DEBUG   SenderThread:26648 [sender.py:send():235] send: footer
+2022-12-28 12:21:41,943 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: defer
+2022-12-28 12:21:41,943 INFO    SenderThread:26648 [sender.py:send_request_defer():388] handle sender defer: 10
+2022-12-28 12:21:42,049 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: poll_exit
+2022-12-28 12:21:42,049 DEBUG   SenderThread:26648 [sender.py:send_request():249] send_request: poll_exit
+2022-12-28 12:21:42,049 INFO    SenderThread:26648 [file_pusher.py:join():150] waiting for file pusher
+2022-12-28 12:21:42,473 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: sampled_history
+2022-12-28 12:21:42,476 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: get_summary
+2022-12-28 12:21:42,478 DEBUG   HandlerThread:26648 [handler.py:handle_request():141] handle_request: shutdown
+2022-12-28 12:21:42,478 INFO    HandlerThread:26648 [handler.py:finish():790] shutting down handler
+2022-12-28 12:21:42,948 INFO    WriterThread:26648 [datastore.py:close():281] close: /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221228_122131-571g84f5/run-571g84f5.wandb
+2022-12-28 12:21:43,371 INFO    SenderThread:26648 [sender.py:finish():1107] shutting down sender
+2022-12-28 12:21:43,371 INFO    SenderThread:26648 [file_pusher.py:finish():145] shutting down file pusher
+2022-12-28 12:21:43,371 INFO    SenderThread:26648 [file_pusher.py:join():150] waiting for file pusher
+2022-12-28 12:21:43,379 INFO    MainThread:26648 [internal.py:handle_exit():82] Internal process exited

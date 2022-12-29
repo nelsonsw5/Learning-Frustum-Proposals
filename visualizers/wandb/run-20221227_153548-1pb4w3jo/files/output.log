@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "plot_gt_kitti.py", line 76, in <module>
+    main(args)
+  File "plot_gt_kitti.py", line 57, in main
+    l, h, w = gt_dims[:, 0:1], gt_dims[:, 1:2], gt_dims[:, 2:3]
+TypeError: list indices must be integers or slices, not tuple
