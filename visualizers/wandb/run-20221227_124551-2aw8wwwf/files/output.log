@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "plot_gt_kitti.py", line 71, in <module>
-    main(args)
-  File "plot_gt_kitti.py", line 57, in main
-    gt_boxes = run.get_bb_dict(gt_centroids, gt_dims, labels=gt_labels, colors=gt_colors)
-NameError: name 'gt_labels' is not defined

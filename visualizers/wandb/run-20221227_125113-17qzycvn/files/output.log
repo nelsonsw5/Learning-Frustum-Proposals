@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "plot_gt_kitti.py", line 72, in <module>
-    main(args)
-  File "plot_gt_kitti.py", line 53, in main
-    label_swap = KittiLabel2Wandb()
-NameError: name 'KittiLabel2Wandb' is not defined

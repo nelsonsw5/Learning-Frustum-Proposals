@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "plot_gt_kitti.py", line 71, in <module>
-    main(args)
-  File "plot_gt_kitti.py", line 54, in main
-    gt_centroids = swap(torch.tensor(gt_centroids))
-ValueError: too many dimensions 'str'
