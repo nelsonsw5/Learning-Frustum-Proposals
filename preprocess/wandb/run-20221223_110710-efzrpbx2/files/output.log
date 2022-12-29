@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "build_frustum_dataset.py", line 97, in <module>
-    main(args)
-  File "build_frustum_dataset.py", line 76, in main
-    create_frustum_data(dataset,New_Directory, args.frustum_method, args.viz)
-  File "build_frustum_dataset.py", line 53, in create_frustum_data
-    dict_list.append(get_point_cloud_log(input_list[pc],str('pc-'+pc)))
-NameError: name 'dict_list' is not defined

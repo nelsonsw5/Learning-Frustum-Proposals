@@ -1,2 +1,0 @@
-> /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/build_frustum_dataset.py(73)create_frustum_data()
--> scene_cloud = point_swap(torch.tensor(scene_cloud[:,0:3]))

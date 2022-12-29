@@ -1,2 +1,0 @@
-build_frustum_dataset.py:60: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
-  centroids = point_swap(torch.tensor(centroids))
