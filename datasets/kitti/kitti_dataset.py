@@ -111,10 +111,12 @@ class KittiScene(object):
         # pc_image_coord = point cloud points in 2D
         # img_fov_inds = True/False for each point in cloud in image field of view
         _, pc_image_coord, img_fov_inds = util.get_lidar_in_image_fov(pc_velo[:,0:3], calib, 0, 0, img_width, img_height, True)
-
+        frustum_class_dict = {}
         for key in boxes.keys():
+            # print("Number of boxes for: ", key, len(boxes[key]))
+            frustum_class_dict.update({key:[]})
             for box in range(len(boxes[key])):
-                frustum_label_dict = {'Frustum_class':key}
+                frustum_dict = {}
                 #xy min and xy max for bounding boxes
                 xmin,ymin,xmax,ymax = boxes[key][box][0],boxes[key][box][1],boxes[key][box][2],boxes[key][box][3]
                 #box_fov_inds = points in 2d that fall inside bounding box coordinates
@@ -122,29 +124,62 @@ class KittiScene(object):
                     (pc_image_coord[:,0]>=xmin) & \
                     (pc_image_coord[:,1]<ymax) & \
                     (pc_image_coord[:,1]>=ymin)
+
                 #box_fov_inds = points in 2d box and that are in the image field of view
                 box_fov_inds = box_fov_inds & img_fov_inds
                 pc_in_box_fov = pc_rect[box_fov_inds,:] #(1607, 4)
+                # print(pc_in_box_fov)
+                if len(pc_in_box_fov) == 0:
+                    # print("true")
+                    continue
                 pc_in_box_fov = calib.project_rect_to_velo(pc_in_box_fov[:,0:3])
-                
+                frustum_dict.update({
+                    'Frustum_ID':box,
+                    'Points':pc_in_box_fov,
+                    'Centroids':[],
+                    'Dims': []
+                })
+                point_x_min = np.min(pc_in_box_fov[:,0])
+                point_y_min = np.min(pc_in_box_fov[:,1])
+                point_z_min = np.min(pc_in_box_fov[:,2])
+
+                point_x_max = np.max(pc_in_box_fov[:,0])
+                point_y_max = np.max(pc_in_box_fov[:,1])
+                point_z_max = np.max(pc_in_box_fov[:,2])
+
                 for object in self.label:
+                    if key != object.type:
+                        continue
                     x = object.loc[0]
                     y = object.loc[1]
                     z = object.loc[2]
-                    
-                    # 3D BOX: Get pts velo in 3d box
-                    box3d_pts_2d, box3d_pts_3d = util.compute_box_3d(obj, calib.P) #(8, 2)(8, 3)
-                    boxes3D.append(box3d_pts_3d)
-                frustum_pcs.append(pc_in_box_fov)
-                frustum_scene_label.append(str(key + " " + str(box)))
-                
-                
+                    centroid = [x,y,z]
+                    dims = [object.h,object.w,object.l]
+                    h = object.h
+                    w = object.w
+                    l = object.l
+                    centroid = np.array([centroid])
+                    dims = np.array([dims])
+                    centroid = np.array(self.calib.project_rect_to_velo(centroid))
+                    h, w, l = dims[:, 0:1], dims[:, 1:2], dims[:, 2:3]
+                    dims = np.concatenate([l,w,h],axis=1)
+                    centroid[:, 2] += h[:, 0] / 2
+                    x = centroid[0,0]
+                    y = centroid[0,1]
+                    z = centroid[0,2]
 
-        centroids, dims = util.get_box_params(boxes3D)
-        h, w, l = dims[:, 0:1], dims[:, 1:2], dims[:, 2:3]
-        dims = np.concatenate([l,w,h],axis=1)
-        centroids[:, 0] += l[:, 0] / 2
-        return input_list, frustum_labels, pc_velo, centroids, dims, cloud_dims, cloud_centroids
+                    if (x > point_x_min) and (x < point_x_max):
+                        
+                        if (y > point_y_min) and (y < point_y_max):
+
+                            if (z > point_z_min) and (z < point_z_max):
+                                frustum_dict['Centroids'].append(centroid[0])
+                                frustum_dict['Dims'].append(dims[0])
+                if len(frustum_dict['Centroids']) == 0:
+                    continue
+                else:
+                    frustum_class_dict[key].append(frustum_dict)
+        return frustum_class_dict
 
     def get_plotted_gt(self):
         new_image = self.image.copy()

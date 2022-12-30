@@ -323,6 +323,7 @@ def compute_box_3d(obj, P):
     corners_3d[1,:] = corners_3d[1,:] + obj.t[1];
     corners_3d[2,:] = corners_3d[2,:] + obj.t[2];
     #print 'cornsers_3d: ', corners_3d 
+        
     # only draw 3d bounding box for objs in front of the camera
     if np.any(corners_3d[2,:]<0.1):
         corners_2d = None

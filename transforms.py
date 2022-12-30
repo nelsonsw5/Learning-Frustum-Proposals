@@ -224,6 +224,8 @@ class GaussianResize(object):
 class KittiPoints2Wandb(object):
 
     def __call__(self, verts, invert=True, *args, **kwargs):
+        if len(verts) == 0:
+            return verts
         # x forward
         # y left
         # z up
@@ -234,6 +236,8 @@ class KittiPoints2Wandb(object):
 class KittiLabel2Wandb(object):
 
     def __call__(self, verts, invert=True, *args, **kwargs):
+        if len(verts) == 0:
+            return verts
         # x right
         # y down
         # z forward
@@ -244,6 +248,8 @@ class KittiLabel2Wandb(object):
 class KittiLabel2KittiPoints(object):
 
     def __call__(self, verts, invert=True, *args, **kwargs):
+        if len(verts) == 0:
+            return verts
         x, y, z = verts.unbind(-1)
         swapped = [z.unsqueeze(-1), -x.unsqueeze(-1), -y.unsqueeze(-1)]
         return torch.cat(swapped, -1)

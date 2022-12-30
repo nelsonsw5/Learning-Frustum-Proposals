@@ -12,6 +12,7 @@ def load_obj(fpath, get_normals=False, filter_high=False):
         header=None,
         comment='#'
     )
+    
     verts = rows[rows[0] == "v"]
 
     if filter_high and verts.shape[1] == 5:
