@@ -1,0 +1,13 @@
+Logging model files to ./chkp/12-30-2022_14:34:43
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+  0%|                                                                                                                                                                                                                      | 0/928 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "train_frustum_neonet.py", line 101, in <module>
+    main(args)
+  File "train_frustum_neonet.py", line 89, in main
+    trainer.fit()
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/base_trainer.py", line 329, in fit
+    for inputs, targets in pbar:
+ValueError: not enough values to unpack (expected 2, got 0)

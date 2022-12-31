@@ -10,7 +10,7 @@ point_features:
   mean_shift: True
 point_encoder:
   type: pointnet
-  num_input_channels: 8
+  num_input_channels: 3
   feature_size: 512
   layer_dims:
     - 64

@@ -1,0 +1,8 @@
+
+  0%|                                                                                                                               | 0/1 [00:00<?, ?it/s]
+Logging model files to ./chkp/12-30-2022_22:18:17
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/models/pointnet.py(146)forward()
+-> if not self.transposed_input:

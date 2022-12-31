@@ -25,14 +25,13 @@ class FrustumNeonet(nn.Module):
             self = self.cuda()
 
 
-    def forward(self, points, geo_type):
-        h = self.encoder(points)
-        h = torch.cat([h, geo_type], dim=-1)
-        y_hat = self.output_head(h)
+    def forward(self, points):
 
+        h = self.encoder(points)
+        y_hat = self.output_head(h)
+        pdb.set_trace()
         if not self.training:
             y_hat = self.decoder(y_hat)
-
         return y_hat
 
 

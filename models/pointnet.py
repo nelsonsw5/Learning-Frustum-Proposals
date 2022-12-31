@@ -1,5 +1,6 @@
 import os
 import sys
+import pdb
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 
 # Copyright (c) 2019, NVIDIA CORPORATION. All rights reserved.
@@ -131,6 +132,7 @@ class PointNetFeatureExtractor(nn.Module):
         self.transposed_input = transposed_input
 
     def forward(self, x: torch.Tensor):
+
         r"""Forward pass through the PointNet feature extractor.
         Args:
             x (torch.Tensor): Tensor representing a pointcloud
@@ -156,6 +158,7 @@ class PointNetFeatureExtractor(nn.Module):
         # For the first layer, store the features, as these will be
         # used to compute local features (if specified).
         if self.batchnorm:
+            pdb.set_trace()
             x = self.activation(self.bn_layers[0](self.conv_layers[0](x)))
         else:
             x = self.activation(self.conv_layers[0](x))

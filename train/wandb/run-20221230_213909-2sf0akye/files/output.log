@@ -1,0 +1,14 @@
+Logging model files to ./chkp/12-30-2022_21:39:08
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/datasets/kitti/frustum_dataset.py(29)__getitem__()
+-> point_cloud_path = os.path.join(self.point_path,str(filename+'.bin'))
+(Pdb)
+
+(Pdb) idx
+0
+(Pdb) self.scene_list[idx]
+'000076-Pedestrian-2'
+(Pdb) filename
+'000076-Pedestrian-2'

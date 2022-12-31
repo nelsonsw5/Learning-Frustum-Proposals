@@ -3,7 +3,7 @@ metadata:
   wandb_project: Learning-Frustum-Proposals
   wandb_group: Debugging
   run_name:
-  viz: True
+  viz: False
 model:
   cfg: "/Users/stephennelson/Projects/Learning-Frustum-Proposals/models/cfgs/learned_frustums.yaml"
   weights: null # path to pretained weights

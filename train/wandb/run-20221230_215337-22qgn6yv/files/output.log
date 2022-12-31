@@ -1,0 +1,17 @@
+Logging model files to ./chkp/12-30-2022_21:53:37
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+  0%|                                                                                                                               | 0/1 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "train_frustum_neonet.py", line 101, in <module>
+    main(args)
+  File "train_frustum_neonet.py", line 89, in main
+    trainer.fit()
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/base_trainer.py", line 345, in fit
+    y_hat = self._batch_prediction(inputs).to(self.device)
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/learned_frustum_trainer.py", line 54, in _batch_prediction
+    y_hat = self.model(
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+TypeError: forward() missing 1 required positional argument: 'geo_type'

@@ -1,0 +1,18 @@
+Logging model files to ./chkp/12-30-2022_21:41:24
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/datasets/kitti/frustum_dataset.py(40)get_points()
+-> cloud = np.fromfile(file_path, dtype=np.float32)
+(Pdb)
+
+(Pdb) file_path
+'/Users/stephennelson/Projects/Data/Kitti/points/000076-Pedestrian-2.bin'
+
+
+(Pdb) self.point_path
+'/Users/stephennelson/Projects/Data/Kitti/points'
+
+(Pdb) data_path
+*** NameError: name 'data_path' is not defined
+

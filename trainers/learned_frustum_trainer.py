@@ -51,10 +51,8 @@ class DensityTrainer(BaseTrainer):
 
 
     def _batch_prediction(self, batch):
-
         y_hat = self.model(
-            batch["points"].to(self.device),
-            batch["object_geo_type"].to(self.device)
+            batch.to(self.device),
         )
         return y_hat
 
@@ -190,9 +188,6 @@ class RegressionTrainer(DensityTrainer):
             batch=batch,
             y=y_viz
         )
-
-
-
 
 TRAINERS = {
     "regressor": RegressionTrainer,

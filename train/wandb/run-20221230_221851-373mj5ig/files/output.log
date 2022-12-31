@@ -1,0 +1,57 @@
+
+  0%|                                                                                                                               | 0/1 [00:00<?, ?it/s]
+Logging model files to ./chkp/12-30-2022_22:18:50
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/models/pointnet.py(162)forward()
+-> x = self.activation(self.bn_layers[0](self.conv_layers[0](x)))
+
+(Pdb) self.conv_layers[0](x)
+tensor([[[-8.7398e+05,  1.4047e+00,  1.0362e+31,  ...,  4.0811e+23,
+          -1.1498e+00,  8.3305e-01],
+         [ 7.1157e+05, -6.7550e-01, -1.4558e+31,  ..., -1.8059e+23,
+           1.0592e+00,  5.0268e-02],
+         [ 1.0507e+06, -1.8272e+00, -2.8858e+31,  ..., -4.6279e+23,
+           1.4978e+00, -4.4242e-01],
+         ...,
+         [-1.0652e+06,  1.8248e+00,  2.9226e+31,  ..., -3.5908e+23,
+           1.0336e+00,  4.2224e-01],
+         [-7.5489e+05,  6.2610e-01, -2.4995e+31,  ...,  4.7187e+23,
+          -1.2468e+00,  1.5762e+00],
+         [ 1.9692e+05, -1.5906e-01,  2.8878e+31,  ...,  1.1071e+22,
+          -5.5278e-01, -1.3579e+00]]], grad_fn=<SqueezeBackward1>)
+(Pdb) self.bn_layers[0](self.conv_layers[0](x))
+tensor([[[nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         ...,
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan]]],
+       grad_fn=<NativeBatchNormBackward>)
+(Pdb) self.conv_layers[0](x)
+tensor([[[-8.7398e+05,  1.4047e+00,  1.0362e+31,  ...,  4.0811e+23,
+          -1.1498e+00,  8.3305e-01],
+         [ 7.1157e+05, -6.7550e-01, -1.4558e+31,  ..., -1.8059e+23,
+           1.0592e+00,  5.0268e-02],
+         [ 1.0507e+06, -1.8272e+00, -2.8858e+31,  ..., -4.6279e+23,
+           1.4978e+00, -4.4242e-01],
+         ...,
+         [-1.0652e+06,  1.8248e+00,  2.9226e+31,  ..., -3.5908e+23,
+           1.0336e+00,  4.2224e-01],
+         [-7.5489e+05,  6.2610e-01, -2.4995e+31,  ...,  4.7187e+23,
+          -1.2468e+00,  1.5762e+00],
+         [ 1.9692e+05, -1.5906e-01,  2.8878e+31,  ...,  1.1071e+22,
+          -5.5278e-01, -1.3579e+00]]], grad_fn=<SqueezeBackward1>)
+(Pdb) x = self.conv_layers[0](x)
+
+(Pdb) self.bn_layers[0](x)
+tensor([[[nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         ...,
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan]]],
+       grad_fn=<NativeBatchNormBackward>)

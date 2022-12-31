@@ -17,7 +17,7 @@ from trainers.learned_frustum_trainer import TRAINERS
 from train.train_utils import setup
 
 from utils import get_yaml
-from datasets.kitti.kitti_dataset import KittiDataset
+from datasets.kitti.frustum_dataset import FrustumDataset
 # from datasets.sunrgbd.sunrgbd_dataset import S
 
 
@@ -33,7 +33,7 @@ def main(args):
 
     max_val = 15
     task = model_cfg["head"]["type"]
-    trn = KittiDataset(data_path='/Users/stephennelson/Projects/Data/Kitti/')
+    trn = FrustumDataset(data_path='/Users/stephennelson/Projects/Data/Frustum_kitti/')
 
     trn_loader = DataLoader(
         trn,
@@ -41,7 +41,7 @@ def main(args):
         shuffle=True
     )
 
-    test = KittiDataset(data_path='/Users/stephennelson/Projects/Data/Kitti/',test=True)
+    test = FrustumDataset(data_path='/Users/stephennelson/Projects/Data/Frustum_kitti/',test=True)
 
     test_loader = DataLoader(
         test,

@@ -1,0 +1,15 @@
+Logging model files to ./chkp/12-30-2022_21:57:19
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+  0%|                                                                                                                               | 0/1 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "train_frustum_neonet.py", line 101, in <module>
+    main(args)
+  File "train_frustum_neonet.py", line 89, in main
+    trainer.fit()
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/base_trainer.py", line 345, in fit
+    y_hat = self._batch_prediction(inputs).to(self.device)
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/learned_frustum_trainer.py", line 56, in _batch_prediction
+    self.train_dataloader.dataset.n_geo_types.to(self.device)
+AttributeError: 'int' object has no attribute 'to'
