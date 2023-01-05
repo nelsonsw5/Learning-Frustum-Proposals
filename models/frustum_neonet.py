@@ -26,10 +26,8 @@ class FrustumNeonet(nn.Module):
 
 
     def forward(self, points):
-
         h = self.encoder(points)
         y_hat = self.output_head(h)
-        pdb.set_trace()
         if not self.training:
             y_hat = self.decoder(y_hat)
         return y_hat
@@ -40,7 +38,8 @@ class FrustumNeonet(nn.Module):
 
 def get_output_head(model_cfg, num_geo_types, max_val):
 
-    n_reg_feats = model_cfg["point_encoder"]["feature_size"] + num_geo_types
+    # n_reg_feats = model_cfg["point_encoder"]["feature_size"] + num_geo_types
+    n_reg_feats = model_cfg["point_encoder"]["feature_size"]
     if model_cfg["head"]["type"] == NeonetTypes.REGRESSOR.value:
         head = RegressorHead(
             input_size=n_reg_feats,

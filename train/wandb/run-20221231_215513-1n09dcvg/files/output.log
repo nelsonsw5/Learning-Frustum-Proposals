@@ -1,0 +1,8 @@
+Logging model files to ./chkp/12-31-2022_21:55:12
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/base_trainer.py(345)fit()
+-> y_hat = self._batch_prediction(inputs).to(self.device)
+(Pdb)
+  0%|                                                                                                                                        | 0/1 [00:00<?, ?it/s]/Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/base_trainer.py:330: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).

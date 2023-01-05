@@ -1,0 +1,33 @@
+2022-12-31 14:57:07,226 INFO    MainThread:69716 [wandb_setup.py:_flush():75] Loading settings from /Users/stephennelson/.config/wandb/settings
+2022-12-31 14:57:07,226 INFO    MainThread:69716 [wandb_setup.py:_flush():75] Loading settings from /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/settings
+2022-12-31 14:57:07,226 INFO    MainThread:69716 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2022-12-31 14:57:07,226 INFO    MainThread:69716 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'preprocess/build_frustum_dataset.py', 'program': 'build_frustum_dataset.py'}
+2022-12-31 14:57:07,226 INFO    MainThread:69716 [wandb_init.py:_log_setup():438] Logging user logs to /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221231_145707-3hldesxv/logs/debug.log
+2022-12-31 14:57:07,226 INFO    MainThread:69716 [wandb_init.py:_log_setup():439] Logging internal logs to /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221231_145707-3hldesxv/logs/debug-internal.log
+2022-12-31 14:57:07,226 INFO    MainThread:69716 [wandb_init.py:init():472] calling init triggers
+2022-12-31 14:57:07,226 INFO    MainThread:69716 [wandb_init.py:init():475] wandb.init called with sweep_config: {}
+config: {}
+2022-12-31 14:57:07,227 INFO    MainThread:69716 [wandb_init.py:init():520] wandb.init() called when a run is still active
+2022-12-31 14:57:07,227 INFO    MainThread:69716 [wandb_run.py:_config_callback():1129] config_cb None None {}
+2022-12-31 14:57:09,012 INFO    MainThread:69716 [wandb_setup.py:_flush():75] Loading settings from /Users/stephennelson/.config/wandb/settings
+2022-12-31 14:57:09,012 INFO    MainThread:69716 [wandb_setup.py:_flush():75] Loading settings from /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/settings
+2022-12-31 14:57:09,012 INFO    MainThread:69716 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2022-12-31 14:57:09,012 INFO    MainThread:69716 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'preprocess/build_frustum_dataset.py', 'program': 'build_frustum_dataset.py'}
+2022-12-31 14:57:09,012 INFO    MainThread:69716 [wandb_init.py:_log_setup():438] Logging user logs to /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221231_145709-bcl581gd/logs/debug.log
+2022-12-31 14:57:09,012 INFO    MainThread:69716 [wandb_init.py:_log_setup():439] Logging internal logs to /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221231_145709-bcl581gd/logs/debug-internal.log
+2022-12-31 14:57:09,013 INFO    MainThread:69716 [wandb_init.py:init():472] calling init triggers
+2022-12-31 14:57:09,013 INFO    MainThread:69716 [wandb_init.py:init():475] wandb.init called with sweep_config: {}
+config: {}
+2022-12-31 14:57:09,013 INFO    MainThread:69716 [wandb_init.py:init():520] wandb.init() called when a run is still active
+2022-12-31 14:57:09,013 INFO    MainThread:69716 [wandb_run.py:_config_callback():1129] config_cb None None {}
+2022-12-31 14:57:10,827 INFO    MainThread:69716 [wandb_setup.py:_flush():75] Loading settings from /Users/stephennelson/.config/wandb/settings
+2022-12-31 14:57:10,827 INFO    MainThread:69716 [wandb_setup.py:_flush():75] Loading settings from /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/settings
+2022-12-31 14:57:10,827 INFO    MainThread:69716 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2022-12-31 14:57:10,827 INFO    MainThread:69716 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'preprocess/build_frustum_dataset.py', 'program': 'build_frustum_dataset.py'}
+2022-12-31 14:57:10,827 INFO    MainThread:69716 [wandb_init.py:_log_setup():438] Logging user logs to /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221231_145710-27iuultm/logs/debug.log
+2022-12-31 14:57:10,827 INFO    MainThread:69716 [wandb_init.py:_log_setup():439] Logging internal logs to /Users/stephennelson/Projects/Learning-Frustum-Proposals/preprocess/wandb/run-20221231_145710-27iuultm/logs/debug-internal.log
+2022-12-31 14:57:10,827 INFO    MainThread:69716 [wandb_init.py:init():472] calling init triggers
+2022-12-31 14:57:10,827 INFO    MainThread:69716 [wandb_init.py:init():475] wandb.init called with sweep_config: {}
+config: {}
+2022-12-31 14:57:10,828 INFO    MainThread:69716 [wandb_init.py:init():520] wandb.init() called when a run is still active
+2022-12-31 14:57:10,828 INFO    MainThread:69716 [wandb_run.py:_config_callback():1129] config_cb None None {}

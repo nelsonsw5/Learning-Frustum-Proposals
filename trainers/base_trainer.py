@@ -6,6 +6,7 @@ from wandb_utils.wandb import WandB
 import numpy as np
 import shutil
 import json
+import pdb
 
 import torch.optim as optim
 import matplotlib.pyplot as plt
@@ -323,7 +324,6 @@ class BaseTrainer(object):
 
             epoch_loss_cum = 0
             epoch_eval_cum = {}
-
             pbar = tqdm(self.train_dataloader, total=len(self.train_dataloader))
             i = 0
             for inputs, targets in pbar:
@@ -348,7 +348,7 @@ class BaseTrainer(object):
 
                 if self.n_gpu > 1:
                     loss = loss.mean()
-
+                loss = loss
                 loss.backward()
                 self.optimizer.step()
 

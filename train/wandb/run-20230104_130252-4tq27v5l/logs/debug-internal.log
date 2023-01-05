@@ -1,0 +1,4 @@
+2023-01-04 13:02:53,767 INFO    MainThread:81604 [internal.py:wandb_internal():92] W&B internal server running at pid: 81604, started at: 2023-01-04 13:02:53.767012
+2023-01-04 13:02:53,768 INFO    WriterThread:81604 [datastore.py:open_for_write():77] open: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20230104_130252-4tq27v5l/run-4tq27v5l.wandb
+2023-01-04 13:02:53,769 DEBUG   SenderThread:81604 [sender.py:send():235] send: header
+2023-01-04 13:02:53,769 DEBUG   SenderThread:81604 [sender.py:send():235] send: run

@@ -1,0 +1,12 @@
+Logging model files to ./chkp/12-31-2022_21:37:04
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/base_trainer.py(346)fit()
+-> y_hat = self._batch_prediction(inputs).to(self.device)
+(Pdb)
+(Pdb) inputs.shape
+torch.Size([1, 131, 3])
+
+(Pdb) type(inputs)
+<class 'torch.Tensor'>

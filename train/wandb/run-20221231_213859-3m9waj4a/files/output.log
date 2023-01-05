@@ -1,0 +1,10 @@
+Logging model files to ./chkp/12-31-2022_21:38:58
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/datasets/kitti/frustum_dataset.py(41)get_points()
+-> return cloud
+(Pdb)
+
+(Pdb) type(cloud)
+<class 'numpy.ndarray'>

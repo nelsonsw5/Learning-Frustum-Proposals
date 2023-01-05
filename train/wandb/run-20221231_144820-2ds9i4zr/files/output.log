@@ -1,0 +1,39 @@
+
+  0%|                                                                                                                                                                                                                                 | 0/1 [00:00<?, ?it/s][W NNPACK.cpp:79] Could not initialize NNPACK! Reason: Unsupported hardware.
+Logging model files to ./chkp/12-31-2022_14:48:20
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+Pointnet.py
+torch.Size([1, 64, 262])
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/models/pointnet.py(164)forward()
+-> x = self.bn_layers[0](x)
+(Pdb) x.shape
+torch.Size([1, 64, 262])
+(Pdb) self.bn_layers[0]
+BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+(Pdb) self.bn_layers[0](x)
+tensor([[[nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         ...,
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan]]],
+       grad_fn=<NativeBatchNormBackward>)
+
+
+(Pdb) x
+tensor([[[-4.7477e+05,  1.0161e+00,  2.0426e+31,  ..., -5.0646e+23,
+           1.5883e+00,  7.6174e-02],
+         [ 2.9597e+05,  7.1054e-01,  2.6108e+31,  ..., -9.7105e+22,
+           8.3229e-01, -3.5562e-01],
+         [-7.4719e+05,  4.1227e-01, -3.5691e+31,  ...,  1.2947e+23,
+          -1.6277e-01,  1.8184e+00],
+         ...,
+         [-3.4205e+05,  5.6669e-01,  1.9239e+31,  ..., -1.0314e+23,
+           7.0010e-02, -3.0281e-01],
+         [ 3.8330e+05,  9.4343e-02,  8.0749e+30,  ..., -1.9944e+23,
+           1.0162e+00, -1.9172e-01],
+         [ 9.4923e+05, -1.1704e-01,  4.5440e+31,  ...,  4.7105e+23,
+          -1.3675e+00, -1.9076e+00]]], grad_fn=<SqueezeBackward1>)

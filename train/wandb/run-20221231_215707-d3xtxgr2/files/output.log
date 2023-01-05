@@ -1,0 +1,9 @@
+  0%|                                                                                                                                        | 0/1 [00:00<?, ?it/s]/Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/base_trainer.py:330: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  inputs = torch.tensor(inputs,dtype=torch.double)
+Logging model files to ./chkp/12-31-2022_21:57:07
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+Pointnet.py
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/models/pointnet.py(162)forward()
+-> x = self.conv_layers[0](x)

@@ -1,6 +1,6 @@
 metadata:
   wandb_entity: prj-research
-  wandb_project: Learning-Frustum-Proposals
+  wandb_project: Frustum-CountNet
   wandb_group: Debugging
   run_name:
   viz: False

@@ -1,0 +1,33 @@
+Logging model files to ./chkp/12-31-2022_14:47:05
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+Pointnet.py
+torch.Size([1, 3, 262])
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/models/pointnet.py(163)forward()
+-> x = self.conv_layers[0](x)
+(Pdb)
+(Pdb) x.shape
+torch.Size([1, 3, 262])
+(Pdb) self.conv_layers[0]
+Conv1d(3, 64, kernel_size=(1,), stride=(1,))
+(Pdb) self.conv_layers[0](x)
+tensor([[[ 1.0169e+06, -1.6506e+00, -2.7369e+31,  ...,  3.5200e+23,
+          -9.3501e-01, -3.3428e-01],
+         [-2.2897e+05, -6.7323e-01, -2.3488e+31,  ..., -4.3494e+23,
+           8.8920e-01,  2.9153e-01],
+         [ 1.0667e+06, -2.6594e+00, -4.5314e+31,  ..., -1.0217e+23,
+          -9.5832e-02, -5.7230e-01],
+         ...,
+         [ 4.0438e+05,  5.4993e-01,  4.5952e+31,  ...,  4.5877e+23,
+          -1.3390e+00, -1.3440e+00],
+         [-9.8318e+04, -3.6839e-02, -1.6174e+31,  ...,  1.6609e+23,
+          -3.3818e-01,  6.3638e-01],
+         [-9.7802e+05,  1.5948e+00, -1.1151e+30,  ..., -6.1124e+21,
+           4.4142e-01,  1.4958e+00]]], grad_fn=<SqueezeBackward1>)
+
+(Pdb) self.conv_layers[0](x).shape
+torch.Size([1, 64, 262])
+(Pdb) x = self.conv_layers[0](x)
+(Pdb) x.shape
+torch.Size([1, 64, 262])

@@ -54,7 +54,7 @@ class DensityTrainer(BaseTrainer):
         y_hat = self.model(
             batch.to(self.device),
         )
-        return y_hat
+        return y_hat.float()
 
     def _wandb_config(self, chkp_dir, resume=False):
 

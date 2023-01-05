@@ -1,0 +1,9 @@
+Logging model files to ./chkp/12-31-2022_14:36:28
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+Pointnet.py
+torch.Size([1, 3, 262])
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/models/pointnet.py(164)forward()
+-> x = self.conv_layers[0](x)
+(Pdb)

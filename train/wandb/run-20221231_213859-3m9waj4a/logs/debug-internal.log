@@ -1,0 +1,94 @@
+2022-12-31 21:39:00,369 INFO    MainThread:75793 [internal.py:wandb_internal():92] W&B internal server running at pid: 75793, started at: 2022-12-31 21:39:00.369460
+2022-12-31 21:39:00,370 INFO    WriterThread:75793 [datastore.py:open_for_write():77] open: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_213859-3m9waj4a/run-3m9waj4a.wandb
+2022-12-31 21:39:00,371 DEBUG   SenderThread:75793 [sender.py:send():235] send: header
+2022-12-31 21:39:00,372 DEBUG   SenderThread:75793 [sender.py:send():235] send: run
+2022-12-31 21:39:00,527 INFO    SenderThread:75793 [dir_watcher.py:__init__():169] watching files in: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_213859-3m9waj4a/files
+2022-12-31 21:39:00,528 INFO    SenderThread:75793 [sender.py:_start_run_threads():812] run started: 3m9waj4a with start time 1672547939
+2022-12-31 21:39:00,528 DEBUG   SenderThread:75793 [sender.py:send():235] send: summary
+2022-12-31 21:39:00,528 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: check_version
+2022-12-31 21:39:00,528 INFO    SenderThread:75793 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-12-31 21:39:00,528 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: check_version
+2022-12-31 21:39:00,695 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: run_start
+2022-12-31 21:39:00,698 DEBUG   HandlerThread:75793 [meta.py:__init__():37] meta init
+2022-12-31 21:39:00,698 DEBUG   HandlerThread:75793 [meta.py:__init__():51] meta init done
+2022-12-31 21:39:00,698 DEBUG   HandlerThread:75793 [meta.py:probe():211] probe
+2022-12-31 21:39:00,699 DEBUG   HandlerThread:75793 [meta.py:_setup_git():201] setup git
+2022-12-31 21:39:00,758 DEBUG   HandlerThread:75793 [meta.py:_setup_git():208] setup git done
+2022-12-31 21:39:00,759 DEBUG   HandlerThread:75793 [meta.py:_save_pip():55] save pip
+2022-12-31 21:39:00,759 DEBUG   HandlerThread:75793 [meta.py:_save_pip():69] save pip done
+2022-12-31 21:39:00,759 DEBUG   HandlerThread:75793 [meta.py:_save_conda():76] save conda
+2022-12-31 21:39:01,534 INFO    Thread-7  :75793 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_213859-3m9waj4a/files/conda-environment.yaml
+2022-12-31 21:39:01,535 INFO    Thread-7  :75793 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_213859-3m9waj4a/files/wandb-summary.json
+2022-12-31 21:39:01,535 INFO    Thread-7  :75793 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_213859-3m9waj4a/files/requirements.txt
+2022-12-31 21:39:01,779 DEBUG   HandlerThread:75793 [meta.py:_save_conda():86] save conda done
+2022-12-31 21:39:01,779 DEBUG   HandlerThread:75793 [meta.py:probe():249] probe done
+2022-12-31 21:39:01,783 DEBUG   SenderThread:75793 [sender.py:send():235] send: files
+2022-12-31 21:39:01,783 INFO    SenderThread:75793 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2022-12-31 21:39:01,786 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:39:01,787 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:39:01,923 DEBUG   SenderThread:75793 [sender.py:send():235] send: telemetry
+2022-12-31 21:39:01,923 DEBUG   SenderThread:75793 [sender.py:send():235] send: config
+2022-12-31 21:39:01,923 DEBUG   SenderThread:75793 [sender.py:send():235] send: config
+2022-12-31 21:39:02,366 INFO    Thread-11 :75793 [upload_job.py:push():137] Uploaded file /var/folders/bj/xb0vw9_96cx1kj56y4l_zzww0000gn/T/tmpsfl0qz1pwandb/b6t4alsw-wandb-metadata.json
+2022-12-31 21:39:02,539 INFO    Thread-7  :75793 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_213859-3m9waj4a/files/conda-environment.yaml
+2022-12-31 21:39:02,539 INFO    Thread-7  :75793 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_213859-3m9waj4a/files/output.log
+2022-12-31 21:39:02,539 INFO    Thread-7  :75793 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_213859-3m9waj4a/files/wandb-metadata.json
+2022-12-31 21:39:04,550 INFO    Thread-7  :75793 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_213859-3m9waj4a/files/output.log
+2022-12-31 21:39:06,564 INFO    Thread-7  :75793 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_213859-3m9waj4a/files/output.log
+2022-12-31 21:39:08,571 INFO    Thread-7  :75793 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_213859-3m9waj4a/files/output.log
+2022-12-31 21:39:16,930 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:39:16,931 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:39:29,770 DEBUG   SenderThread:75793 [sender.py:send():235] send: stats
+2022-12-31 21:39:31,684 INFO    Thread-7  :75793 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_213859-3m9waj4a/files/config.yaml
+2022-12-31 21:39:32,722 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:39:32,723 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:39:47,857 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:39:47,859 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:40:00,894 DEBUG   SenderThread:75793 [sender.py:send():235] send: stats
+2022-12-31 21:40:03,005 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:40:03,006 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:40:18,144 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:40:18,146 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:40:32,041 DEBUG   SenderThread:75793 [sender.py:send():235] send: stats
+2022-12-31 21:40:33,298 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:40:33,300 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:40:48,455 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:40:48,456 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:41:03,271 DEBUG   SenderThread:75793 [sender.py:send():235] send: stats
+2022-12-31 21:41:03,599 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:41:03,601 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:41:18,750 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:41:18,752 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:41:33,897 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:41:33,898 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:41:34,459 DEBUG   SenderThread:75793 [sender.py:send():235] send: stats
+2022-12-31 21:41:49,030 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:41:49,032 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:42:04,190 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:42:04,191 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:42:05,672 DEBUG   SenderThread:75793 [sender.py:send():235] send: stats
+2022-12-31 21:42:19,344 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:42:19,345 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:42:34,494 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:42:34,496 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:42:36,871 DEBUG   SenderThread:75793 [sender.py:send():235] send: stats
+2022-12-31 21:42:49,639 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:42:49,640 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:43:04,790 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:43:04,791 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:43:08,076 DEBUG   SenderThread:75793 [sender.py:send():235] send: stats
+2022-12-31 21:43:19,926 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:43:19,927 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:43:35,072 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:43:35,073 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:43:39,335 DEBUG   SenderThread:75793 [sender.py:send():235] send: stats
+2022-12-31 21:43:50,227 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:43:50,228 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:44:05,392 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:44:05,393 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:44:10,575 DEBUG   SenderThread:75793 [sender.py:send():235] send: stats
+2022-12-31 21:44:20,537 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:44:20,537 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:44:35,672 DEBUG   HandlerThread:75793 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 21:44:35,675 DEBUG   SenderThread:75793 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 21:44:41,687 DEBUG   SenderThread:75793 [sender.py:send():235] send: stats

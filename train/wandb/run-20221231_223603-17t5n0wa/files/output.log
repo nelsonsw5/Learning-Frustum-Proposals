@@ -1,0 +1,50 @@
+Logging model files to ./chkp/12-31-2022_22:35:59
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+Pointnet.py
+torch.Size([1, 64, 131])
+torch.Size([1, 64, 131])
+torch.Size([1, 64, 131])
+> /opt/anaconda3/envs/thesis/lib/python3.8/site-packages/torch/nn/functional.py(1849)linear()
+-> return torch._C._nn.linear(input, weight, bias)
+(Pdb)
+
+(Pdb) torch._C._nn.linear(input, weight, bias)
+*** RuntimeError: mat1 and mat2 shapes cannot be multiplied (1x512 and 515x512)
+
+(Pdb) input.shape
+torch.Size([1, 512])
+(Pdb) weight.shape
+torch.Size([512, 515])
+
+(Pdb) continue
+  0%|                                                                                                                                        | 0/1 [00:45<?, ?it/s]
+Traceback (most recent call last):
+  File "train_frustum_neonet.py", line 101, in <module>
+    main(args)
+  File "train_frustum_neonet.py", line 89, in main
+    trainer.fit()
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/base_trainer.py", line 345, in fit
+    y_hat = self._batch_prediction(inputs.float()).to(self.device)
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/learned_frustum_trainer.py", line 54, in _batch_prediction
+    y_hat = self.model(
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/models/frustum_neonet.py", line 31, in forward
+    y_hat = self.output_head(h)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/models/regressor.py", line 40, in forward
+    h = self.weights(x)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 96, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/torch/nn/functional.py", line 1849, in linear
+    return torch._C._nn.linear(input, weight, bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (1x512 and 515x512)

@@ -1,0 +1,11 @@
+Logging model files to ./chkp/12-31-2022_22:45:51
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+Pointnet.py
+torch.Size([1, 64, 131])
+torch.Size([1, 64, 131])
+torch.Size([1, 64, 131])
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/models/frustum_neonet.py(33)forward()
+-> if not self.training:
+(Pdb)

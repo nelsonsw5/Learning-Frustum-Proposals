@@ -2,6 +2,7 @@ import cv2
 import os
 import json
 import numpy as np
+import torch
 from torch.utils.data import Dataset
 import pdb
 
@@ -25,18 +26,17 @@ class FrustumDataset(Dataset):
 
     def __getitem__(self, idx):
         filename = self.scene_list[idx]
-        point_cloud_path = os.path.join(self.point_path,str(filename+'.bin'))
+        point_cloud_path = os.path.join(self.point_path,str(filename+'.npy'))
         frustum_label_path = os.path.join(self.label_path,str(filename+'.json'))
-        points = self.get_points(point_cloud_path)
+        points = torch.tensor(self.get_points(point_cloud_path),dtype=torch.double)
         label = self.get_frustum_count(frustum_label_path)
-        
-        return points, label
+        return points.float(), torch.tensor(label).float()
     
     def __len__(self):
         return len(self.scene_list)
 
     def get_points(self, file_path):
-        cloud = np.fromfile(file_path, dtype=np.float32)
+        cloud = np.load(file_path)
         cloud = cloud.reshape((-1, 3))
         return cloud
 
@@ -50,6 +50,7 @@ class FrustumDataset(Dataset):
             if os.path.isfile(f):
                 scene = filename.split(".")[0:-1]
                 id_dict.update({scene_itr:scene[0]})
+            scene_itr += 1
         return id_dict
     
     def get_frustum_count(self, filepath):
@@ -62,8 +63,6 @@ class FrustumDataset(Dataset):
         return self.n_geo_types
 
     def get_wandb_plot(self, wandb_run, batch, y, y_hat=None, eval_dict=None):
-        
-
             log_dict = {}
             for d in dict_list:
                 for k, v in d.items():

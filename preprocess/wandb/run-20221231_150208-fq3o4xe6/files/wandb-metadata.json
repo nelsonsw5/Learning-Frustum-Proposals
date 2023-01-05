@@ -1,0 +1,25 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-12-31T22:02:10.194614",
+    "startedAt": "2022-12-31T22:02:08.689636",
+    "docker": null,
+    "cpu_count": 10,
+    "cuda": null,
+    "args": [
+        "--viz",
+        "all"
+    ],
+    "state": "running",
+    "program": "build_frustum_dataset.py",
+    "codePath": "preprocess/build_frustum_dataset.py",
+    "git": {
+        "remote": "https://github.com/nelsonsw5/Learning-Frustum-Proposals.git",
+        "commit": "da12826e1329a29eac136d1e02595486819063a4"
+    },
+    "email": "stephenwnelson5@gmail.com",
+    "root": "/Users/stephennelson/Projects/Learning-Frustum-Proposals",
+    "host": "Stephens-MBP.local",
+    "username": "stephennelson",
+    "executable": "/opt/anaconda3/envs/thesis/bin/python"
+}

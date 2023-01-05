@@ -1,0 +1,8 @@
+
+  0%|                                                                                                                               | 0/1 [00:00<?, ?it/s]
+Logging model files to ./chkp/12-31-2022_14:17:04
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/models/pointnet.py(162)forward()
+-> x = self.activation(self.bn_layers[0](self.conv_layers[0](x)))

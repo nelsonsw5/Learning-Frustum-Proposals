@@ -1,0 +1,30 @@
+Logging model files to ./chkp/12-31-2022_15:18:10
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+000076-Pedestrian-2
+  0%|                                                                                                                                                                                                                                 | 0/1 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "train_frustum_neonet.py", line 101, in <module>
+    main(args)
+  File "train_frustum_neonet.py", line 89, in main
+    trainer.fit()
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/base_trainer.py", line 330, in fit
+    for inputs, targets in pbar:
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/tqdm/std.py", line 1195, in __iter__
+    for obj in iterable:
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 561, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/datasets/kitti/frustum_dataset.py", line 31, in __getitem__
+    points = self.get_points(point_cloud_path)
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/datasets/kitti/frustum_dataset.py", line 40, in get_points
+    cloud = np.load(file_path)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/numpy/lib/npyio.py", line 445, in load
+    raise ValueError("Cannot load file containing pickled data "
+ValueError: Cannot load file containing pickled data when allow_pickle=False

@@ -1,0 +1,18 @@
+  0%|                                                                                                                                        | 0/1 [00:00<?, ?it/s][W NNPACK.cpp:79] Could not initialize NNPACK! Reason: Unsupported hardware.
+/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/torch/nn/modules/loss.py:528: UserWarning: Using a target size (torch.Size([])) that is different to the input size (torch.Size([1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Logging model files to ./chkp/12-31-2022_22:51:26
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/base_trainer.py(353)fit()
+-> loss.backward()
+(Pdb) loss.backward()
+*** RuntimeError: Found dtype Long but expected Float
+
+(Pdb) loss
+tensor(1.0389, grad_fn=<MseLossBackward>)
+
+
+(Pdb) loss.type()
+'torch.FloatTensor'

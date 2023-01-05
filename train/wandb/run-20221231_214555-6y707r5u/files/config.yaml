@@ -1,0 +1,133 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.14
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.13
+    start_time: 1672548355
+    t:
+      1:
+      - 1
+      - 41
+      - 51
+      - 55
+      3:
+      - 13
+      4: 3.8.13
+      5: 0.12.14
+      8:
+      - 5
+data_augmentation:
+  desc: null
+  value:
+    add_noise:
+      apply: true
+      mean: 0
+      samples: 0.1
+      std: 0.02
+    mirror_x:
+      apply: true
+      probability: 0.2
+    resize:
+      apply: true
+      mean: 0
+      samples: 0.2
+      std: 0.05
+dataset:
+  desc: null
+  value:
+    cache: false
+    dir: Kitti
+    drop_last: false
+    notest: false
+    num_workers: 8
+    sample_points: null
+    shuffle: true
+    use_normals: false
+dataset_id:
+  desc: null
+  value: Kitti
+fc_layer_depth:
+  desc: null
+  value: 5
+fc_layer_max_dim:
+  desc: null
+  value: 512
+head:
+  desc: null
+  value:
+    fc_layers:
+    - 512
+    - 256
+    - 64
+    - 64
+    - 64
+    type: regressor
+meta:
+  desc: null
+  value:
+    dropout: 0.0
+metadata:
+  desc: null
+  value:
+    run_name: null
+    viz: false
+    wandb_entity: prj-research
+    wandb_group: Debugging
+    wandb_project: Frustum-CountNet
+model:
+  desc: null
+  value:
+    cfg: /Users/stephennelson/Projects/Learning-Frustum-Proposals/models/cfgs/learned_frustums.yaml
+    weights: null
+n_params:
+  desc: null
+  value: 595457
+optimization:
+  desc: null
+  value:
+    batch_size: 4
+    cuda: false
+    dropout: 0.0
+    epochs: 5
+    learning_rate: 0.001
+    optimizer: adam
+    resume: false
+    test_batch_size: 4
+    weight_decay: 0.1
+point_encoder:
+  desc: null
+  value:
+    backbone: pointnet
+    feature_size: 512
+    layer_dims:
+    - 3
+    - 64
+    - 128
+    - 256
+    - 512
+    num_input_channels: 3
+    type: pointnet
+point_encoder_depth:
+  desc: null
+  value: 5
+point_encoder_max_dim:
+  desc: null
+  value: 512
+point_features:
+  desc: null
+  value:
+    augmented: true
+    distance: true
+    epsilon: 0.05
+    max_points: 1024
+    mean_shift: true
+    seg_filter: false
+    type: learned_frustums
+resume:
+  desc: null
+  value: false

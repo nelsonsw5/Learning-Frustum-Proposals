@@ -1,0 +1,7 @@
+Logging model files to ./chkp/12-31-2022_15:30:02
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/learned_frustum_trainer.py(55)_batch_prediction()
+-> y_hat = self.model(
+(Pdb)

@@ -1,0 +1,48 @@
+  0%|                                                                                                                                        | 0/1 [00:00<?, ?it/s][W NNPACK.cpp:79] Could not initialize NNPACK! Reason: Unsupported hardware.
+/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/torch/nn/modules/loss.py:528: UserWarning: Using a target size (torch.Size([])) that is different to the input size (torch.Size([1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Loss: 0.94132: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 34.89it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 288.25it/s]
+Loss: 0.86240: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 62.08it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 328.97it/s]
+Loss: 0.72656: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 65.98it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 310.37it/s]
+Loss: 0.56408: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 69.21it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 303.41it/s]
+Loss: 0.48007: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 66.41it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 299.12it/s]
+Traceback (most recent call last):
+  File "train_frustum_neonet.py", line 101, in <module>
+    main(args)
+  File "train_frustum_neonet.py", line 89, in main
+    trainer.fit()
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/base_trainer.py", line 456, in fit
+    self._wandb.log_dir(self.chkp_dir, self.model_name, type='neonet')
+  File "/Users/stephennelson/Projects/Learning-Frustum-Proposals/wandb_utils/wandb.py", line 97, in log_dir
+    artifact = wandb.Artifact(name, type=type)
+  File "/opt/anaconda3/envs/thesis/lib/python3.8/site-packages/wandb/sdk/wandb_artifacts.py", line 136, in __init__
+    raise ValueError(
+ValueError: Artifact name may only contain alphanumeric characters, dashes, underscores, and dots. Invalid name: "12-31-2022_23:03:40"
+Logging model files to ./chkp/12-31-2022_23:03:40
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+train/loss 0.94132 train/mae 14.5532 train/mape 0.9702 train/mse 211.7966
+----> Validation inference <----
+val/loss 0.00000 val/mae 0.0000 val/mape 0.0000 val/mse 0.0000
+************* EPOCH: 2 *************
+train/loss 0.78349 train/mae 13.2773 train/mape 0.8852 train/mse 176.2855
+----> Validation inference <----
+val/loss 0.00000 val/mae 0.0000 val/mape 0.0000 val/mse 0.0000
+************* EPOCH: 3 *************
+train/loss 0.45486 train/mae 10.1165 train/mape 0.6744 train/mse 102.3429
+----> Validation inference <----
+val/loss 0.00000 val/mae 0.0000 val/mape 0.0000 val/mse 0.0000
+************* EPOCH: 4 *************
+train/loss 0.07666 train/mae 4.1531 train/mape 0.2769 train/mse 17.2482
+----> Validation inference <----
+val/loss 0.00444 val/mae 1.0000 val/mape 1.0000 val/mse 1.0000
+************* EPOCH: 5 *************
+train/loss 0.14403 train/mae 5.6928 train/mape 0.3795 train/mse 32.4077
+----> Validation inference <----
+val/loss 0.00444 val/mae 1.0000 val/mape 1.0000 val/mse 1.0000

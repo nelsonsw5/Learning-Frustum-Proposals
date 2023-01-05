@@ -1,0 +1,37 @@
+2022-12-31 22:19:24,089 INFO    MainThread:77243 [internal.py:wandb_internal():92] W&B internal server running at pid: 77243, started at: 2022-12-31 22:19:24.088804
+2022-12-31 22:19:24,090 INFO    WriterThread:77243 [datastore.py:open_for_write():77] open: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_221922-218ewdzv/run-218ewdzv.wandb
+2022-12-31 22:19:24,091 DEBUG   SenderThread:77243 [sender.py:send():235] send: header
+2022-12-31 22:19:24,091 DEBUG   SenderThread:77243 [sender.py:send():235] send: run
+2022-12-31 22:19:24,272 DEBUG   HandlerThread:77243 [handler.py:handle_request():141] handle_request: check_version
+2022-12-31 22:19:24,273 INFO    SenderThread:77243 [dir_watcher.py:__init__():169] watching files in: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_221922-218ewdzv/files
+2022-12-31 22:19:24,273 INFO    SenderThread:77243 [sender.py:_start_run_threads():812] run started: 218ewdzv with start time 1672550363
+2022-12-31 22:19:24,273 DEBUG   SenderThread:77243 [sender.py:send():235] send: summary
+2022-12-31 22:19:24,273 INFO    SenderThread:77243 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-12-31 22:19:24,273 DEBUG   SenderThread:77243 [sender.py:send_request():249] send_request: check_version
+2022-12-31 22:19:24,446 DEBUG   HandlerThread:77243 [handler.py:handle_request():141] handle_request: run_start
+2022-12-31 22:19:24,447 DEBUG   HandlerThread:77243 [meta.py:__init__():37] meta init
+2022-12-31 22:19:24,448 DEBUG   HandlerThread:77243 [meta.py:__init__():51] meta init done
+2022-12-31 22:19:24,448 DEBUG   HandlerThread:77243 [meta.py:probe():211] probe
+2022-12-31 22:19:24,449 DEBUG   HandlerThread:77243 [meta.py:_setup_git():201] setup git
+2022-12-31 22:19:24,499 DEBUG   HandlerThread:77243 [meta.py:_setup_git():208] setup git done
+2022-12-31 22:19:24,500 DEBUG   HandlerThread:77243 [meta.py:_save_pip():55] save pip
+2022-12-31 22:19:24,500 DEBUG   HandlerThread:77243 [meta.py:_save_pip():69] save pip done
+2022-12-31 22:19:24,500 DEBUG   HandlerThread:77243 [meta.py:_save_conda():76] save conda
+2022-12-31 22:19:25,280 INFO    Thread-7  :77243 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_221922-218ewdzv/files/requirements.txt
+2022-12-31 22:19:25,280 INFO    Thread-7  :77243 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_221922-218ewdzv/files/wandb-summary.json
+2022-12-31 22:19:25,280 INFO    Thread-7  :77243 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_221922-218ewdzv/files/conda-environment.yaml
+2022-12-31 22:19:25,667 DEBUG   HandlerThread:77243 [meta.py:_save_conda():86] save conda done
+2022-12-31 22:19:25,668 DEBUG   HandlerThread:77243 [meta.py:probe():249] probe done
+2022-12-31 22:19:25,672 DEBUG   SenderThread:77243 [sender.py:send():235] send: files
+2022-12-31 22:19:25,672 INFO    SenderThread:77243 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2022-12-31 22:19:25,675 DEBUG   HandlerThread:77243 [handler.py:handle_request():141] handle_request: stop_status
+2022-12-31 22:19:25,675 DEBUG   SenderThread:77243 [sender.py:send_request():249] send_request: stop_status
+2022-12-31 22:19:25,805 DEBUG   SenderThread:77243 [sender.py:send():235] send: telemetry
+2022-12-31 22:19:25,806 DEBUG   SenderThread:77243 [sender.py:send():235] send: config
+2022-12-31 22:19:25,806 DEBUG   SenderThread:77243 [sender.py:send():235] send: config
+2022-12-31 22:19:26,248 INFO    Thread-11 :77243 [upload_job.py:push():137] Uploaded file /var/folders/bj/xb0vw9_96cx1kj56y4l_zzww0000gn/T/tmpjwrwu8x3wandb/34durnbz-wandb-metadata.json
+2022-12-31 22:19:26,284 INFO    Thread-7  :77243 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_221922-218ewdzv/files/conda-environment.yaml
+2022-12-31 22:19:26,284 INFO    Thread-7  :77243 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_221922-218ewdzv/files/wandb-metadata.json
+2022-12-31 22:19:26,284 INFO    Thread-7  :77243 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_221922-218ewdzv/files/output.log
+2022-12-31 22:19:28,296 INFO    Thread-7  :77243 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_221922-218ewdzv/files/output.log
+2022-12-31 22:19:30,306 INFO    Thread-7  :77243 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/stephennelson/Projects/Learning-Frustum-Proposals/train/wandb/run-20221231_221922-218ewdzv/files/output.log

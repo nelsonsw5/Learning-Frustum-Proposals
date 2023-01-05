@@ -1,0 +1,11 @@
+Logging model files to ./chkp/12-31-2022_23:05:01
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/trainers/base_trainer.py(328)fit()
+-> pbar = tqdm(self.train_dataloader, total=len(self.train_dataloader))
+
+
+
+(Pdb) len(self.train_dataloader)
+1

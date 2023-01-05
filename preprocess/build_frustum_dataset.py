@@ -21,7 +21,7 @@ def create_new_folder(filepath):
         os.makedirs(filepath)
     return filepath
 
-def write_frustum_label(frustum):
+def write_frustum_data(frustum):
     centroids = []
     dims = []
     for centroid in frustum['Centroids']:
@@ -30,6 +30,8 @@ def write_frustum_label(frustum):
         dims.append(list(dim))
     label_dict = {'centroids':centroids,'dimensions':dims,'frustum_count':len(frustum['Centroids'])}
     points = frustum['Points']
+    # print("build_frustum_dataset 33")
+    # print(points)
     return label_dict, points
 
 def save_scene(frustum_data,scene_image, scene, save_path):
@@ -42,13 +44,15 @@ def save_scene(frustum_data,scene_image, scene, save_path):
         for scene_id in range(len(frustum_data[key])):
             scene_image_path = os.path.join(image_path,str(scene+'-'+key+"-"+str(scene_id)+'.png'))
             scene_label_path = os.path.join(label_path,str(scene+'-'+key+"-"+str(scene_id)+'.json'))
-            scene_points_path = os.path.join(points_path,str(scene+'-'+key+"-"+str(scene_id)+'.bin'))
+            scene_points_path = os.path.join(points_path,str(scene+'-'+key+"-"+str(scene_id)+'.npy'))
+            # print("build_frustum_dataset 43")
+            # print("scene_points_path: ", scene_points_path)
             cv2.imwrite(scene_image_path,scene_image)
-            label, points = write_frustum_label(frustum_data[key][scene_id])
+            label, points = write_frustum_data(frustum_data[key][scene_id])
             label_json = json.dumps(label, indent=4)
             with open(scene_label_path, "w") as outfile:
                 outfile.write(label_json)
-            points.tofile(scene_points_path)
+            np.save(scene_points_path,points)
     return
 
 
@@ -98,7 +102,7 @@ def create_frustum_data(dataset, new_data, frustum_method, viz):
         # checking if it is a file
         if os.path.isfile(os.path.join(images,scene)):
             scene = scene[0:-4]
-            # scene = '000033'
+            # scene = '000076'
             # print("scene: ", scene)
             kitti_scene = KittiScene(scene_id=scene, dataset=dataset)
 

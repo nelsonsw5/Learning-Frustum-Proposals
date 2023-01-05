@@ -1,0 +1,8 @@
+Logging model files to ./chkp/12-31-2022_14:55:13
+TRAINING MODEL: regressor
+Training on CPU
+************* EPOCH: 1 *************
+000076-Pedestrian-2
+> /Users/stephennelson/Projects/Learning-Frustum-Proposals/datasets/kitti/frustum_dataset.py(34)__getitem__()
+-> return points, label
+(Pdb)
